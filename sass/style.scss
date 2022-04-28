@@ -1,0 +1,250 @@
+/* === === === === === === === === === === FONTS === === === === === === === === === === */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+@font-face {
+    font-family: apercu;
+    src: url(../fonts/ApercuPro-ExtraLight.ttf);
+}
+
+/* === === === === === === === === === === GENERAL === === === === === === === === === === */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+    grid-template-rows: min-content min-content min-content;
+    background-color: rgb(0, 0, 0);
+    background-position: unset;
+    background-size: cover;
+    padding: 30px;
+    scroll-behavior: smooth;
+}
+
+/* === === === === === === === === === === HEADER === === === === === === === === === === */
+header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.containerHeader {
+    background-color: black;
+    border-radius: 10px;
+
+}
+
+.header {
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+
+
+
+    .logo h1 {
+
+        height: auto;
+        font-family: 'Orbitron', sans-serif;
+        letter-spacing: 2px;
+        font-size: 25px;
+        color: #fff;
+        font-weight: 900;
+        letter-spacing: 6px;
+
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 45px;
+        margin: 0;
+
+        li {
+            position: relative;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 15px;
+            letter-spacing: 1px;
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: #F4D44B;
+
+                font-weight: 600;
+                transition: all ease 0.3s;
+
+                &:hover {
+                    color: #e4c435;
+
+                    text-decoration: overline;
+                }
+            }
+        }
+    }
+}
+
+
+main {
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+
+.contenedorMain {
+    display: flex;
+    flex-direction: row;
+}
+
+.contenedorMainIzquierda {
+    // background-color: #797873;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        // background-color: rgb(54, 60, 47);
+        padding: 15px;
+        justify-content: center;
+        width: 300px;
+
+    }
+
+    p {
+        // background-color: rgb(36, 52, 53);
+        font-family: apercu;
+        font-size: 17px;
+        padding: 15px;
+        width: 300px;
+        color: white;
+    }
+}
+
+.contenedorMainDerecha {
+    background-image: url(../imagenes/afd55d0b-a7c4-47fd-96ed-a634adabf910.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 500px;
+}
+
+.neonText {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 7px;
+    font-size: 55px;
+    // color: rgb(31, 29, 29);
+    margin: 0;
+    text-shadow:
+        .1vw 0vw .25vw #F4D44B, .2vw 0vw .25vw #F4D44B, .4vw 0vw .25vw #F4D44B,
+
+        .1vw 0vw 0vw #F4D44B, .2vw 0vw 0vw #F4D44B, .3vw 0vw 0vw #F4D44B,
+        .1vw 0vw .1vw #F4D44B, .2vw 0vw .1vw #F4D44B, .3vw 0vw .1vw #F4D44B,
+
+        .1vw 0vw 1vw #e4c435, .2vw 0vw 1vw #e4c435, .2vw 0vw 0.8vw #e4c435,
+
+}
+
+
+// .neonText {
+//     font-family: 'Orbitron', sans-serif;
+//     letter-spacing: 7px;
+//     font-size: 55px;
+//     // color: rgb(31, 29, 29);
+//     margin: 0;
+//     text-shadow:
+//         .2vw 0vw 0vw #F4D44B, -.2vw 0vw 0vw #F4D44B, .2vw 0vw .6vw #F4D44B,
+//         0vw .2vw 0vw #F4D44B, 0vw -.2vw 0vw #F4D44B, .2vw 0vw .6vw #F4D44B,
+// }
+
+
+h3{
+    color: #F4D44B;
+    font-family: 'Orbitron';
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+
+
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: apercu;
+    grid-column: 1/4;
+    //background-color: blue;
+    padding: 70px 0px;
+    
+    
+}
+
+.cardProducto{
+     //background-color: #e100ff;
+    border: 2px solid #F4D44B ;
+    width: 25rem;
+    object-fit: contain;
+    transition: 400ms;
+    &:hover{
+        //transform: scale(1.1);
+        transform:translateY(-20px)
+    }
+}
+
+.cardImagen{
+    background-image: url("../imagenes/rig.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.cardFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #F4D44B;
+    align-items: center;
+    letter-spacing: 4px;
+    font-weight: bold;
+    padding: 10px;
+    //background-color: aqua;
+}
+.cardFooter button{
+    padding: 10px 20px;
+    background-color: #F4D44B;
+    color: #000;
+    border: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: ease 350ms;
+    &:hover{
+        background-color: rgb(12, 12, 12);
+       
+        color: #F4D44B;
+
+    }
+}
+
+footer {
+    grid-column: 1/4;
+    grid-row: 3/4;
+
+    // background-color: grey;
+    p {
+        color: white;
+        text-align: center;
+        font-family: 'Orbitron', sans-serif;
+
+    }
+}
+
