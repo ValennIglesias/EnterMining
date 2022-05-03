@@ -1,10 +1,14 @@
 /* === === === === === === === === === === FONTS === === === === === === === === === === */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
 
 @font-face {
-    font-family: apercu;
-    src: url(../fonts/ApercuPro-ExtraLight.ttf);
+    font-family: poppins;
+    src: url(../fonts/Poppins-Regular.ttf);
 }
 
 /* === === === === === === === === === === GENERAL === === === === === === === === === === */
@@ -22,6 +26,7 @@ body {
     background-size: cover;
     padding: 30px;
     scroll-behavior: smooth;
+   
 }
 
 /* === === === === === === === === === === HEADER === === === === === === === === === === */
@@ -49,7 +54,7 @@ header {
     .logo h1 {
 
         height: auto;
-        font-family: 'Orbitron', sans-serif;
+        font-family: poppins;
         letter-spacing: 2px;
         font-size: 25px;
         color: #fff;
@@ -67,7 +72,7 @@ header {
 
         li {
             position: relative;
-            font-family: 'Orbitron', sans-serif;
+            font-family: poppins;
             font-size: 15px;
             letter-spacing: 1px;
             list-style: none;
@@ -118,7 +123,7 @@ main {
 
     p {
         // background-color: rgb(36, 52, 53);
-        font-family: apercu;
+        font-family: poppins;
         font-size: 17px;
         padding: 15px;
         width: 300px;
@@ -136,39 +141,23 @@ main {
 }
 
 .neonText {
-    font-family: 'Orbitron', sans-serif;
+    font-family: poppins;
     letter-spacing: 7px;
     font-size: 55px;
-    // color: rgb(31, 29, 29);
+    color: white;
     margin: 0;
-    text-shadow:
-        .1vw 0vw .25vw #F4D44B, .2vw 0vw .25vw #F4D44B, .4vw 0vw .25vw #F4D44B,
-
-        .1vw 0vw 0vw #F4D44B, .2vw 0vw 0vw #F4D44B, .3vw 0vw 0vw #F4D44B,
-        .1vw 0vw .1vw #F4D44B, .2vw 0vw .1vw #F4D44B, .3vw 0vw .1vw #F4D44B,
-
-        .1vw 0vw 1vw #e4c435, .2vw 0vw 1vw #e4c435, .2vw 0vw 0.8vw #e4c435,
-
 }
 
 
-// .neonText {
-//     font-family: 'Orbitron', sans-serif;
-//     letter-spacing: 7px;
-//     font-size: 55px;
-//     // color: rgb(31, 29, 29);
-//     margin: 0;
-//     text-shadow:
-//         .2vw 0vw 0vw #F4D44B, -.2vw 0vw 0vw #F4D44B, .2vw 0vw .6vw #F4D44B,
-//         0vw .2vw 0vw #F4D44B, 0vw -.2vw 0vw #F4D44B, .2vw 0vw .6vw #F4D44B,
-// }
+
 
 
 h3{
     color: #F4D44B;
-    font-family: 'Orbitron';
+    font-family: 'poppins';
     text-align: center;
     font-size: 30px;
+    margin-bottom: 20px;
     
 }
 
@@ -179,10 +168,10 @@ h3{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    font-family: apercu;
+    font-family: poppins;
     grid-column: 1/4;
     //background-color: blue;
-    padding: 70px 0px;
+    padding: 30px 0px;
     row-gap: 30px;
 
     
@@ -221,6 +210,7 @@ h3{
     //background-color: aqua;
 }
 .cardFooter button{
+    font-family: poppins;
     padding: 10px 20px;
     background-color: #F4D44B;
     color: #000;
@@ -256,7 +246,7 @@ h3{
     background-repeat: no-repeat;
     height: 400px;
     width: 40%;
-    // border: solid 2px #F4D44B;
+    border: solid 2px #F4D44B;
     box-shadow: 2px 2px 10px 2px #F4D44B;
 
    
@@ -267,10 +257,9 @@ h3{
     color: white;
     padding: 0 20px ;
     text-align: justify;
-    font-family: apercu;
+    font-family: poppins;
     font-size: 16px;
-    font-weight: bold;
-    line-height: 24px;
+    line-height: 20px;
 
 
 }
