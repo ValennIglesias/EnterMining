@@ -26,13 +26,16 @@ body {
     background-size: cover;
     padding: 30px;
     scroll-behavior: smooth;
-   
+
 }
 
 /* === === === === === === === === === === HEADER === === === === === === === === === === */
 header {
     grid-column: 1/4;
     grid-row: 1/2;
+    z-index: 100;
+    position: sticky;
+    top: 0px;
 }
 
 .containerHeader {
@@ -47,7 +50,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    z-index: 1000;
+    
 
 
 
