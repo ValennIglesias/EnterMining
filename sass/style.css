@@ -470,6 +470,12 @@ h4 {
   background-color: transparent;
 }
 
+.accordion-button:focus {
+  border-bottom: 1px solid #F4D44B;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .accordion-collapse {
   color: #F4D44B;
 }
