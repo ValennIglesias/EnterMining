@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enter Mining</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" href="./imagenes/isotipoFondonegro.png">
     <link rel="stylesheet" href="./sass/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -18,14 +21,14 @@
         <div class="containerHeader">
             <div class="header">
                 <div class="logo">
-                    <h1>LOGO</h1>
+                    <img src="./imagenes/isotipoFondonegro.png" alt="">
                 </div>
                 <nav>
                     <ul class="menu">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#seccionProductos">Productos</a></li>
-                        <li><a href="#seccionNosotros">Nosotros</a></li>
-                        <li><a href="./paginas/contact.html">Contacto</a></li>
+                        <li><a href="#">INICIO</a></li>
+                        <li><a href="#seccionProductos">PRODUCTOS</a></li>
+                        <li><a href="#seccionNosotros">NOSOTROS</a></li>
+                        <li><a href="#contacto">CONTACTO</a></li>
                         <li><a href="./paginas/shop.html">FAQ</a></li>
                     </ul>
                 </nav>
@@ -39,19 +42,19 @@
         <!-- === === === === === INICIO === === === === === -->
         <div class="contenedorMain">
             <div class="contenedorMainIzquierda">
-                <h2 class="neonText">ENTER <br> MINING</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <img class="logoInicio" src="/imagenes/logodoslineas.png" alt="">
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Velit non nisi, sed iusto magni laborum aut dolorum odit
-                    quisquam maxime!</p>
+                    quisquam maxime!</p> -->
             </div>
             <div class="contenedorMainDerecha">
                 <div class="tamañoImagenMain"></div>
             </div>
         </div>
         <!-- === === === === === PRODUCTOS === === === === === -->
-
-        <div>
-            <h3 id="seccionProductos">Productos</h3>
+        <h3 id="seccionProductos" >Productos</h3>
+        <div class="containerProductos">
+            
             <div class="cardContainer">
                 <div class="cardProducto">
                     <div class="cardImagen">
@@ -108,36 +111,55 @@
         <h3 id="seccionNosotros">Nosotros</h3>
 
         <div class="containerNosotros">
-            <div class="imagenNosotros" data-aos="fade-right"  data-aos-delay="50"
-            data-aos-duration="1000"></div>
-            <div class="textoNosotros" data-aos="fade-left" data-aos-delay="50"
-            data-aos-duration="1000">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ab?
-                    Cumque illo recusandae beatae maxime autem fuga vero eum quis!
-                    Ipsum facere, fuga sequi magnam harum accusamus quos adipisci earum!
-                    Nisi, voluptatum ab eos molestiae debitis expedita accusamus rerum dolore?
-                    Hic eius nam odio suscipit molestiae veniam repudiandae cumque iste.
-                    Tempora delectus nesciunt repellat. Distinctio natus odio nisi laudantium beatae!
-                    Repellendus esse in sunt et error. Sit accusantium earum repellat.
-                    Sint eos repudiandae eius molestiae repellat animi praesentium, mollitia fugit.
-                    Vitae, eum quam eos inventore velit deleniti soluta molestiae nisi!
-                    Velit animi soluta iusto ullam exercitationem pariatur laborum a saepe.
-                    Explicabo sit ullam iusto facilis alias placeat ut commodi voluptates.
-                    Quis dignissimos quae iste, enim fugiat illum quisquam consequatur cumque!
-                    Ipsa sit perferendis dolores cumque doloremque eum laudantium amet tenetur.
-                    Quibusdam veritatis qui esse dolore repudiandae. Nostrum consequatur minima laboriosam.
-                    Explicabo, maxime tenetur. Quo fuga a, ipsam esse laudantium ex?
-                    Sint eos repudiandae eius molestiae repellat animi praesentium, mollitia fugit.
-                    Vitae, eum quam eos inventore velit deleniti soluta molestiae nisi!
-                    Velit animi soluta iusto ullam exercitationem pariatur laborum a saepe.
-                    Explicabo sit ullam iusto facilis alias placeat ut commodi voluptates.
-                    Quis dignissimos quae iste, enim fugiat illum quisquam consequatur cumque!
-                    Ipsa sit perferendis dolores cumque doloremque eum laudantium amet tenetur.
-                    Quibusdam veritatis qui esse dolore repudiandae. Nostrum consequatur minima laboriosam.
-                    Explicabo, maxime tenetur. Quo fuga a, ipsam esse laudantium ex?
+            <div class="imagenNosotros"></div>
+            <div class="textoNosotros">
+                <p>
+                    <h4> ¿Por qué elegir Enter Mining? </h4>
+                    <br>
+
+                    Porque somos una empresa dedicada a la planificación,gestión e importación de placas de videos,
+                    hardware y equipos de minería. Ofrecemos la mejor asesoría para poner en acción tus proyectos e
+                    ideas.
+                    <br>
+                    <br>
+                    Nuestra empresa conoce el valor de tus inversiones, por eso mismo, ofrecemos el mejor precio con la
+                    más alta calidad.
+                    <br>
+                    <br>
+                    Asesoramos a particulares, housings y granjas.
                 </p>
             </div>
         </div>
+
+
+        <!-- === === === === === CONTACTO === === === === === -->
+        <h3 id="contacto">Contacto</h3>
+        <div class="contenedorForm">
+            <form id="form">
+
+                <input class="formInput" type="text" placeholder="Name" name="name" required>
+                <label for="Name"></label><br>
+                <input class="formInput" type="email" name="email" placeholder="Email" name="email" required>
+                <label for="email"></label><br>
+                <textarea class="formInput" cols="30" rows="4" placeholder="Message" name="message" required></textarea>
+                <label for="consulta"></label>
+                <div class="boton">
+                    <input class="inputBoton" type="submit" value="Submit">
+                </div>
+            </form>
+
+            <div class="redes">
+
+                <p class="tituloRedes">Nuestras <br> redes. . .</p>
+
+                <div>
+                    <a href=""><i class="icon fa-brands fa-whatsapp fa-6x"></i></a>
+                    <a href=""><i class="icon fa-brands fa-facebook fa-6x"></i></a>
+                    <a href=""><i class="icon fa-brands fa-instagram fa-6x"></i></a>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <!-- === === === === === FOOTER === === === === === -->
