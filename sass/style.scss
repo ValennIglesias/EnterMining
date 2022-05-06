@@ -364,6 +364,35 @@ h4{
 }
 
 
+// <!-- === === === === === FAQ === === === === === --> //
+
+.accordion{
+    border: 1px solid #F4D44B ;
+    
+
+
+}
+
+.accordion-button{
+    color: #F4D44B;
+    border: 1px solid #F4D44B ;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #F4D44B;
+    background-color: transparent;
+    
+}
+
+.accordion-collapse{
+    color: #F4D44B;
+}
+
+.accordion-body{
+    color: #F4D44B;
+}
+
+
 footer {
     grid-column: 1/4;
     grid-row: 3/4;
