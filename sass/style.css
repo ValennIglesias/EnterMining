@@ -230,7 +230,6 @@ h3 {
 }
 
 .cardProducto {
-  border: 2px solid #F4D44B;
   width: 25rem;
   -o-object-fit: contain;
      object-fit: contain;
@@ -239,12 +238,13 @@ h3 {
 }
 
 .cardProducto:hover {
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  border: 2px solid #F4D44B;
 }
 
 .cardImagen {
-  background-image: url("../imagenes/rig.jpg");
+  background-image: url("/imagenes/flyer Productos.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -437,14 +437,14 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 50%;
 }
 
 .redes p {
-  font-size: 55px;
+  font-size: 45px;
   font-weight: bold;
   color: #F4D44B;
   letter-spacing: 4px;

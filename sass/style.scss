@@ -86,6 +86,7 @@ header {
 
                     text-decoration: overline;
                 }
+                
             }
         }
     }
@@ -181,22 +182,24 @@ h3{
 
 .cardProducto{
      //background-color: #e100ff;
-    border: 2px solid #F4D44B ;
+    //border: 2px solid #F4D44B ;
     width: 25rem;
     object-fit: contain;
     transition: 400ms;
     &:hover{
-        //transform: scale(1.1);
-        transform:translateY(-20px)
+        transform: scale(1.15);
+        //transform:translateY(-20px);
+        border: 2px solid #F4D44B;
     }
 }
 
 .cardImagen{
-    background-image: url("../imagenes/rig.jpg");
+    background-image: url("/imagenes/flyer\ Productos.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     height: 400px;
+
 }
 
 .cardFooter{
@@ -343,13 +346,13 @@ h4{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: 50%;
     
 
 
     p{
-        font-size: 55px;
+        font-size: 45px;
         font-weight: bold;
         color: #F4D44B;
         letter-spacing: 4px;
@@ -368,14 +371,14 @@ h4{
 
 .accordion{
     border: 1px solid #F4D44B ;
-    
 
 
 }
 
+
 .accordion-button{
     color: #F4D44B;
-    border: 1px solid #F4D44B ;
+    border: 1px solid #F4D44B ;;
 }
 
 .accordion-button:not(.collapsed) {
