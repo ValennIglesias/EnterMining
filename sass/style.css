@@ -56,7 +56,6 @@ header {
 
 .containerHeader {
   background-color: black;
-  border-radius: 10px;
 }
 
 .header {
@@ -223,8 +222,17 @@ main {
   color: #F4D44B;
 }
 
+.nosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .containerNosotros {
-  width: 100%;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,7 +243,6 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 100px 50px;
   margin-bottom: 100px;
 }
 
@@ -261,6 +268,14 @@ main {
   line-height: 40px;
 }
 
+.textoNosotros::-moz-selection {
+  background-color: #F4D44B;
+}
+
+.textoNosotros::selection {
+  background-color: #F4D44B;
+}
+
 h4 {
   font-size: 35px;
   text-align: center;
@@ -268,19 +283,38 @@ h4 {
   letter-spacing: 3px;
 }
 
-.contenedorForm {
-  width: 100%;
+h4::-moz-selection {
+  background-color: #F4D44B;
+}
+
+h4::selection {
+  background-color: #F4D44B;
+}
+
+.contacto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-left: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenedorForm {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contenedorForm form {
   width: 50%;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
 }
 
 .contenedorForm form h2 {
@@ -305,8 +339,8 @@ h4 {
   border: none;
   border-bottom: 2.5px solid #F4D44B;
   outline: none;
-  width: 100%;
-  padding: 50px;
+  width: 90%;
+  padding: 40px 25px;
   color: #F4D44B;
 }
 
@@ -375,11 +409,11 @@ h4 {
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 50%;
-  padding: 100px 0 0 0;
+  padding-top: 65px;
 }
 
 .redes p {
-  font-size: 35px;
+  font-size: 50px;
   font-weight: bold;
   color: #F4D44B;
   letter-spacing: 4px;
@@ -393,17 +427,32 @@ h4 {
 
 .animacionRedes {
   padding: 50px 0 0 0;
-  height: 250px;
+  height: 300px;
   width: auto;
+}
+
+.faq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .accordion {
   border: 1px solid #F4D44B;
+  width: 90%;
 }
 
 .accordion-button {
   color: #F4D44B;
   border: 1px solid #F4D44B;
+  padding: 30px 10px;
+}
+
+.accordion-body {
+  padding: 30px 10px;
 }
 
 .accordion-button:not(.collapsed) {
@@ -412,7 +461,7 @@ h4 {
 }
 
 .accordion-button:focus {
-  border-bottom: 1px solid #f4d44b;
+  border: 1px solid #f4d44b;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -434,16 +483,148 @@ h4 {
 }
 
 footer {
+  border-top: 2px solid #F4D44B;
+  margin-top: 150px;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footerIzquierda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 25%;
+}
+
+footer .footerIzquierda .mediosdePago {
+  font-size: 24px;
+  color: #fff;
+}
+
+footer .iconosPagos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 footer p {
   color: white;
   text-align: center;
+}
+
+footer .footerMedio {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footerDerecha {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footerDerecha .encontranos {
+  color: #F4D44B;
+  font-size: 24px;
+}
+
+footer .footerDerecha .direccion {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+footer .footerDerecha .direccion:hover {
+  color: #F4D44B;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+footer .footerDerecha .iconosRedes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .iconosFooter {
+  width: 60px;
+  height: 40px;
+  background-color: #f4d44b;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.logoFooter {
+  height: 200px;
+  width: auto;
+}
+
+canvas {
+  position: absolute;
+  background-size: contain;
+  z-index: -1;
+  height: 300px !important;
+  -o-object-fit: none;
+     object-fit: none;
 }
 /*# sourceMappingURL=style.css.map */

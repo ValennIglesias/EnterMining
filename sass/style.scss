@@ -15,6 +15,8 @@
 
 html {
     scroll-behavior: smooth;
+
+    
 }
 
 body {
@@ -28,7 +30,10 @@ body {
     scroll-behavior: smooth;
     font-family: poppins;
 
+
 }
+
+
 
 h3{
     color: #F4D44B;
@@ -52,8 +57,7 @@ header {
 
 .containerHeader {
     background-color: black;
-    border-radius: 10px;
-
+        
 }
 
 .header {
@@ -107,6 +111,8 @@ header {
 main {
     grid-column: 1/4;
     grid-row: 2/3;
+
+    
 }
 
 .contenedorMain {
@@ -237,13 +243,18 @@ main {
 
 // <!-- === === === === === NOSOTROS === === === === === --> //
 
+.nosotros{
+    display: flex;
+    justify-content: center;
+}
+
 .containerNosotros{
-    width: 100%;
+    width: 90%;
     // background-color: #f44b9a;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 100px 50px;
+    //padding: 100px 50px;
     margin-bottom: 100px;
     
 }
@@ -266,6 +277,11 @@ main {
     font-family: poppins;
     font-size: 25px;
     line-height: 40px;
+
+    &::selection{
+        background-color: #F4D44B;
+    }
+    
 }
 
 h4{
@@ -273,18 +289,30 @@ h4{
     text-align: center;
     color:#F4D44B;
     letter-spacing: 3px;
+
+    &::selection{
+        background-color: #F4D44B;
+    }
 }
 
 // <!-- === === === === === CONTACTO === === === === === --> //
 
-.contenedorForm {
-    width: 100%;
+.contacto{
     display: flex;
-    justify-content: space-between;
-    padding-left: 50px;
+    justify-content: center;
+}
+
+.contenedorForm {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    
 
     form {
         width: 50%;
+        display: grid;
+        justify-items: center;
+
 
         h2 {
             font-family: poppins;
@@ -304,8 +332,8 @@ h4{
             border: none;
             border-bottom: 2.5px solid #F4D44B;
             outline: none;
-            width: 100%;
-            padding: 50px;
+            width: 90%;
+            padding: 40px 25px;
             color: #F4D44B;
         }
 
@@ -348,10 +376,10 @@ h4{
     align-items: center;
     justify-content: flex-start;
     width: 50%;
-    padding: 100px 0 0 0;
+    padding-top: 65px;
     
     p{
-        font-size: 35px;
+        font-size: 50px;
         font-weight: bold;
         color: #F4D44B;
         letter-spacing: 4px;
@@ -366,20 +394,31 @@ h4{
 
 .animacionRedes{
     padding: 50px 0 0 0;
-    height: 250px;
+    height: 300px;
     width: auto;
 }
 
 
 // <!-- === === === === === FAQ === === === === === --> //
 
+.faq{
+    display: flex;
+    justify-content: center;
+}
+
 .accordion{
     border: 1px solid #F4D44B ;
+    width: 90%;
 }
 
 .accordion-button{
     color: #F4D44B;
-    border: 1px solid #F4D44B ;;
+    border: 1px solid #F4D44B ;
+    padding: 30px 10px ;
+}
+
+.accordion-body{
+    padding: 30px 10px;
 }
 
 .accordion-button:not(.collapsed) {
@@ -388,7 +427,7 @@ h4{
     
 }
 .accordion-button:focus{
-    border-bottom: 1px solid rgb(244, 212, 75);
+    border: 1px solid rgb(244, 212, 75);
     box-shadow: none;   
 }
 
@@ -400,12 +439,14 @@ h4{
     }
 }
 
+
 .accordion-collapse{
     color: #F4D44B;
 }
 
 .accordion-body{
     color: #F4D44B;
+  
 }
 
 .accordion-button{
@@ -417,14 +458,110 @@ h4{
 // <!-- === === === === === FOOTER === === === === === --> //
 
 footer {
+    border-top: 2px solid #F4D44B;
+    margin-top: 150px;
     grid-column: 1/4;
     grid-row: 3/4;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 
+    .footer{
+        display: flex;
+        width: 90%;
+        
+        justify-content: space-between;
+    }
+
+    .footerIzquierda{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 25%;
+
+        .mediosdePago{
+            font-size: 24px;
+            color: #fff;
+        }
+    }
+
+
+
+    .iconosPagos{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
     // background-color: grey;
     p {
         color: white;
         text-align: center;
         
+    
+    }
 
+    .footerMedio{
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footerDerecha{
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .encontranos{
+            color: #F4D44B;
+            font-size: 24px;
+        }
+
+        .direccion{
+            text-decoration: none;
+            color: #ffffff;
+        
+            &:hover{
+                color: #F4D44B;
+                transition: 400ms;
+            }
+        }
+
+
+        .iconosRedes{
+            display: flex;
+            width: 100%;
+            justify-content: space-around;            
+        }
+    }
+
+
+
+    .iconosFooter {
+        width: 60px;
+        height: 40px;
+        background-color: #f4d44b;
+        border-radius: 5px;
+        padding: 2px;
+        
     }
 }
+
+.logoFooter{
+    
+    height: 200px;
+    width: auto;
+    
+}
+
+canvas {
+    position: absolute;
+    background-size:contain;
+    z-index: -1;
+    height: 300px !important;
+  
+    object-fit: none;
+  }
