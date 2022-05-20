@@ -1,10 +1,9 @@
 /* === === === === === === === === === === FONTS === === === === === === === === === === */
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 @font-face {
     font-family: poppins;
@@ -16,7 +15,7 @@
 html {
     scroll-behavior: smooth;
 
-    
+
 }
 
 body {
@@ -29,20 +28,16 @@ body {
     // padding: 30px;
     scroll-behavior: smooth;
     font-family: poppins;
-
-
 }
 
-
-
-h3{
+h3 {
     color: #F4D44B;
     font-family: 'poppins';
     text-align: center;
     font-size: 50px;
     padding-top: 200px;
     padding-bottom: 30px;
-    
+
 }
 
 /* === === === === === === === === === === HEADER === === === === === === === === === === */
@@ -57,7 +52,7 @@ header {
 
 .containerHeader {
     background-color: black;
-        
+
 }
 
 .header {
@@ -66,7 +61,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+
 
     .logo img {
 
@@ -90,7 +85,7 @@ header {
 
             a {
                 text-decoration: none;
-                color: #F4D44B;
+                color: rgb(244, 212, 75);
                 font-weight: 600;
                 transition: all ease 0.3s;
 
@@ -99,10 +94,53 @@ header {
 
                     text-decoration: overline;
                 }
-                
+
             }
         }
     }
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, .55);
+    border-color: rgba(0, 0, 0, .1);
+    border: none;
+}
+
+.navbar {
+
+    background-color: transparent;
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #F4D44B;
+}
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: #F4D44B;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    transition: box-shadow .15s ease-in-out;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("../imagenes/bars-solid.svg");
+
+
+}
+
+.navbar .container-fluid {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: flex-end;
+
 }
 
 /* === === === === === === === === === === INICIO === === === === === === === === === === */
@@ -112,16 +150,16 @@ main {
     grid-column: 1/4;
     grid-row: 2/3;
 
-    
+
 }
 
 .contenedorMain {
     display: flex;
     flex-direction: row;
-    
+
 }
 
-.imagenInicio{
+.imagenInicio {
     background-image: url(../imagenes/farm-2852024_960_720.webp);
     background-size: cover;
     background-position: center;
@@ -129,84 +167,32 @@ main {
     width: 100%;
 }
 
-// .contenedorMainIzquierda {
-//     width: 50%;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-
-//     .logoInicio {
-//         width: 400px;
-//         height: 400px;
-        
-//     }
-
-//     p {
-//         // background-color: rgb(36, 52, 53);
-//         font-family: poppins;
-//         font-size: 17px;
-//         padding: 15px;
-//         width: 300px;
-//         color: white;
-        
-//     }
-// }
-
-// .contenedorMainDerecha {
-//     background-image: url(../imagenes/afd55d0b-a7c4-47fd-96ed-a634adabf910.jpg);
-//     background-position: center;
-//     background-size: contain;
-//     background-repeat: no-repeat;
-//     width: 50%;
-//     height: 500px;
-//     animation: flotar 5s linear infinite;
-//     animation-direction: alternate-reverse;
-// }
-// @keyframes flotar {
-//     25% {
-//       transform: translateY(-6px);
-//     }
-  
-//     50%,
-//     100% {
-//       transform: translateY(0px);
-//     }
-  
-//     75% {
-//       transform: translateY(6px);
-//     }
-//   }
-
 
 /* === === === === === === === === === === PRODUCTOS === === === === === === === === === === */
 
-.cardContainer{
+.cardContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     font-family: poppins;
     grid-column: 1/4;
-    //background-color: blue;
     padding: 30px 0px;
-    row-gap: 30px;  
+    row-gap: 30px;
 }
 
-.cardProducto{
-     //background-color: #e100ff;
-    //border: 2px solid #F4D44B ;
+.cardProducto {
     width: 25rem;
     object-fit: contain;
     transition: 400ms;
-    &:hover{
+
+    &:hover {
         transform: scale(1.15);
-        //transform:translateY(-20px);
         border: 2px solid #F4D44B;
     }
 }
 
-.cardImagen{
+.cardImagen {
     background-image: url("../imagenes/flyerProductos.png");
     background-position: center;
     background-size: contain;
@@ -214,7 +200,7 @@ main {
     height: 400px;
 }
 
-.cardFooter{
+.cardFooter {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -223,9 +209,9 @@ main {
     letter-spacing: 4px;
     font-weight: bold;
     padding: 10px;
-    //background-color: aqua;
 }
-.cardFooter button{
+
+.cardFooter button {
     font-family: poppins;
     padding: 10px 20px;
     background-color: #F4D44B;
@@ -235,35 +221,36 @@ main {
     font-weight: bold;
     cursor: pointer;
     transition: ease 350ms;
-    &:hover{
+
+    &:hover {
         background-color: rgb(12, 12, 12);
         color: #F4D44B;
     }
 }
 
-.masProductos{
+.masProductos {
     display: none;
 }
 
 
-.mostrar{
+.mostrar {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     font-family: poppins;
     grid-column: 1/4;
-    //background-color: blue;
     padding: 30px 0px;
-    row-gap: 30px;  
+    row-gap: 30px;
 }
 
-.verMas{
+.verMas {
     display: flex;
     justify-content: center;
     margin: 20px;
 }
-#VerMas{
+
+#VerMas {
     font-family: poppins;
     padding: 10px 20px;
     background-color: #F4D44B;
@@ -273,20 +260,53 @@ main {
     font-weight: bold;
     cursor: pointer;
     transition: ease 350ms;
-    &:hover{
+
+    &:hover {
         background-color: rgb(12, 12, 12);
         color: #F4D44B;
     }
 }
 
+
+@media only screen and (max-width: 1366px) {
+
+    .cardContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        font-family: poppins;
+        grid-column: 1/4;
+        padding: 30px 15px;
+        row-gap: 30px;
+
+        .cardProducto {
+            width: 18rem;
+            padding: 0px 20px;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        .cardFooter {
+            font-size: 12px;
+        }
+
+        h4{
+            font-size: 17px;
+        } 
+    }
+}
+
 // <!-- === === === === === NOSOTROS === === === === === --> //
 
-.nosotros{
+.nosotros {
     display: flex;
     justify-content: center;
 }
 
-.containerNosotros{
+.containerNosotros {
     width: 90%;
     // background-color: #f44b9a;
     display: flex;
@@ -294,9 +314,10 @@ main {
     justify-content: space-between;
     //padding: 100px 50px;
     margin-bottom: 100px;
-    
+
 }
-.imagenNosotros{
+
+.imagenNosotros {
     background-image: url(../imagenes/entermining.jpg);
     background-position: center;
     background-size: contain;
@@ -304,38 +325,38 @@ main {
     height: 500px;
     width: 45%;
     border: solid 2px #F4D44B;
-    box-shadow: 2px 2px 10px 2px #F4D44B; 
+    box-shadow: 2px 2px 10px 2px #F4D44B;
 }
 
-.textoNosotros{
+.textoNosotros {
     width: 50%;
     color: white;
-    padding: 0 20px ;
+    padding: 0 20px;
     text-align: justify;
     font-family: poppins;
     font-size: 25px;
     line-height: 40px;
 
-    &::selection{
+    &::selection {
         background-color: #F4D44B;
     }
-    
+
 }
 
-h4{
+h4 {
     font-size: 35px;
     text-align: center;
-    color:#F4D44B;
+    color: #F4D44B;
     letter-spacing: 3px;
 
-    &::selection{
+    &::selection {
         background-color: #F4D44B;
     }
 }
 
 // <!-- === === === === === CONTACTO === === === === === --> //
 
-.contacto{
+.contacto {
     display: flex;
     justify-content: center;
 }
@@ -344,7 +365,7 @@ h4{
     width: 90%;
     display: flex;
     align-items: center;
-    
+
 
     form {
         width: 50%;
@@ -384,7 +405,7 @@ h4{
             display: flex;
             justify-content: center;
             padding: 20px;
-            
+
 
             .inputBoton {
                 padding: 10px 50px;
@@ -408,15 +429,15 @@ h4{
     }
 }
 
-.redes{
+.redes {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     width: 50%;
     padding-top: 65px;
-    
-    p{
+
+    p {
         font-size: 50px;
         font-weight: bold;
         color: #F4D44B;
@@ -425,12 +446,12 @@ h4{
     }
 }
 
-.icon{
+.icon {
     color: #F4D44B;
     padding: 10px;
 }
 
-.animacionRedes{
+.animacionRedes {
     padding: 50px 0 0 0;
     height: 300px;
     width: auto;
@@ -439,56 +460,57 @@ h4{
 
 // <!-- === === === === === FAQ === === === === === --> //
 
-.faq{
+.faq {
     display: flex;
     justify-content: center;
 }
 
-.accordion{
-    border: 1px solid #F4D44B ;
+.accordion {
+    border: 1px solid #F4D44B;
     width: 90%;
 }
 
-.accordion-button{
+.accordion-button {
     color: #F4D44B;
-    border: 1px solid #F4D44B ;
-    padding: 30px 10px ;
+    border: 1px solid #F4D44B;
+    padding: 30px 10px;
 }
 
-.accordion-body{
+.accordion-body {
     padding: 30px 10px;
 }
 
 .accordion-button:not(.collapsed) {
     color: #F4D44B;
     background-color: transparent;
-    
-}
-.accordion-button:focus{
-    border: 1px solid rgb(244, 212, 75);
-    box-shadow: none;   
+
 }
 
-.accordion-button{
-    &:not(.collapsed){
-        &::after{
-            background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23F4D44B'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");   
+.accordion-button:focus {
+    border: 1px solid rgb(244, 212, 75);
+    box-shadow: none;
+}
+
+.accordion-button {
+    &:not(.collapsed) {
+        &::after {
+            background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23F4D44B'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
         }
     }
 }
 
 
-.accordion-collapse{
+.accordion-collapse {
     color: #F4D44B;
 }
 
-.accordion-body{
+.accordion-body {
     color: #F4D44B;
-  
+
 }
 
-.accordion-button{
-    &::after{
+.accordion-button {
+    &::after {
         background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23F4D44B'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
     }
 }
@@ -504,21 +526,21 @@ footer {
     flex-flow: row wrap;
     justify-content: center;
 
-    .footer{
+    .footer {
         display: flex;
         width: 90%;
-        
+
         justify-content: space-between;
     }
 
-    .footerIzquierda{
+    .footerIzquierda {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 25%;
 
-        .mediosdePago{
+        .mediosdePago {
             font-size: 24px;
             color: #fff;
         }
@@ -526,20 +548,21 @@ footer {
 
 
 
-    .iconosPagos{
+    .iconosPagos {
         display: flex;
         width: 100%;
         justify-content: space-between;
     }
+
     // background-color: grey;
     p {
         color: white;
         text-align: center;
-        
-    
+
+
     }
 
-    .footerMedio{
+    .footerMedio {
         width: 25%;
         display: flex;
         flex-direction: column;
@@ -547,32 +570,32 @@ footer {
         justify-content: center;
     }
 
-    .footerDerecha{
+    .footerDerecha {
         width: 25%;
         display: flex;
         flex-direction: column;
         justify-content: center;
 
-        .encontranos{
+        .encontranos {
             color: #F4D44B;
             font-size: 24px;
         }
 
-        .direccion{
+        .direccion {
             text-decoration: none;
             color: #ffffff;
-        
-            &:hover{
+
+            &:hover {
                 color: #F4D44B;
                 transition: 400ms;
             }
         }
 
 
-        .iconosRedes{
+        .iconosRedes {
             display: flex;
             width: 100%;
-            justify-content: space-around;            
+            justify-content: space-around;
         }
     }
 
@@ -584,22 +607,22 @@ footer {
         background-color: #f4d44b;
         border-radius: 5px;
         padding: 2px;
-        
+
     }
 }
 
-.logoFooter{
-    
+.logoFooter {
+
     height: 200px;
     width: auto;
-    
+
 }
 
 canvas {
     position: absolute;
-    background-size:contain;
+    background-size: contain;
     z-index: -1;
     height: 300px !important;
-  
+
     object-fit: none;
-  }
+}

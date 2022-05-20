@@ -103,7 +103,7 @@ header {
 
 .header .menu li a {
   text-decoration: none;
-  color: #F4D44B;
+  color: #f4d44b;
   font-weight: 600;
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
@@ -112,6 +112,55 @@ header {
 .header .menu li a:hover {
   color: #e4c435;
   text-decoration: overline;
+}
+
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.55);
+  border-color: rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.navbar {
+  background-color: transparent;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #F4D44B;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: #F4D44B;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  -webkit-transition: -webkit-box-shadow .15s ease-in-out;
+  transition: -webkit-box-shadow .15s ease-in-out;
+  transition: box-shadow .15s ease-in-out;
+  transition: box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("../imagenes/bars-solid.svg");
+}
+
+.navbar .container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 /* === === === === === === === === === === INICIO === === === === === === === === === === */
@@ -271,6 +320,41 @@ main {
 #VerMas:hover {
   background-color: #0c0c0c;
   color: #F4D44B;
+}
+
+@media only screen and (max-width: 1366px) {
+  .cardContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: poppins;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    padding: 30px 15px;
+    row-gap: 30px;
+  }
+  .cardContainer .cardProducto {
+    width: 18rem;
+    padding: 0px 20px;
+  }
+  .cardContainer .cardProducto:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .cardContainer .cardFooter {
+    font-size: 12px;
+  }
+  .cardContainer h4 {
+    font-size: 17px;
+  }
 }
 
 .nosotros {
