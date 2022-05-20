@@ -241,6 +241,44 @@ main {
     }
 }
 
+.masProductos{
+    display: none;
+}
+
+
+.mostrar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: poppins;
+    grid-column: 1/4;
+    //background-color: blue;
+    padding: 30px 0px;
+    row-gap: 30px;  
+}
+
+.verMas{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+#VerMas{
+    font-family: poppins;
+    padding: 10px 20px;
+    background-color: #F4D44B;
+    color: #000;
+    border: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: ease 350ms;
+    &:hover{
+        background-color: rgb(12, 12, 12);
+        color: #F4D44B;
+    }
+}
+
 // <!-- === === === === === NOSOTROS === === === === === --> //
 
 .nosotros{

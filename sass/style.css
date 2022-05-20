@@ -222,6 +222,57 @@ main {
   color: #F4D44B;
 }
 
+.masProductos {
+  display: none;
+}
+
+.mostrar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: poppins;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  padding: 30px 0px;
+  row-gap: 30px;
+}
+
+.verMas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px;
+}
+
+#VerMas {
+  font-family: poppins;
+  padding: 10px 20px;
+  background-color: #F4D44B;
+  color: #000;
+  border: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: ease 350ms;
+  transition: ease 350ms;
+}
+
+#VerMas:hover {
+  background-color: #0c0c0c;
+  color: #F4D44B;
+}
+
 .nosotros {
   display: -webkit-box;
   display: -ms-flexbox;
