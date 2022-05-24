@@ -22,8 +22,8 @@ body {
     display: grid;
     grid-template-columns: 10% auto 10%;
     grid-template-rows: min-content min-content min-content;
-    background-color: rgb(0, 0, 0);
-    background-position: unset;
+    background-color: rgb(8, 8, 8);
+    //background-position: unset;
     background-size: cover;
     // padding: 30px;
     scroll-behavior: smooth;
@@ -40,6 +40,8 @@ h3 {
 
 }
 
+
+
 /* === === === === === === === === === === HEADER === === === === === === === === === === */
 
 header {
@@ -48,15 +50,16 @@ header {
     z-index: 100;
     position: sticky;
     top: 0px;
+    width: 100%;
 }
 
 .containerHeader {
-    background-color: black;
+    background-color: rgb(8, 8, 8);
 
 }
 
 .header {
-    width: 100%;
+    
     height: min-content;
     display: flex;
     justify-content: space-around;
@@ -65,7 +68,7 @@ header {
 
     .logo img {
 
-        height: 120px;
+        height: 160px;
 
     }
 
@@ -76,29 +79,18 @@ header {
         column-gap: 45px;
         margin: 0;
 
-        li {
-            position: relative;
-            font-family: poppins;
-            font-size: 18px;
-            letter-spacing: 1px;
-            list-style: none;
+        
 
             a {
                 text-decoration: none;
                 color: rgb(244, 212, 75);
                 font-weight: 600;
                 transition: all ease 0.3s;
-
-                &:hover {
-                    color: #e4c435;
-
-                    text-decoration: overline;
-                }
-
+                
             }
         }
     }
-}
+
 
 .navbar-light .navbar-toggler {
     color: rgba(0, 0, 0, .55);
@@ -107,13 +99,26 @@ header {
 }
 
 .navbar {
-
     background-color: transparent;
+
 
 }
 
 .navbar-light .navbar-nav .nav-link {
     color: #F4D44B;
+    font-size: 18px;
+    padding: 0 25px;
+
+        &:hover{
+            color: #f4d54bb4;
+            text-decoration: overline;
+        }
+
+        &:focus{
+            color: #F4D44B;
+            //font-weight: bold;
+            //text-decoration: overline;
+        }
 }
 
 .navbar-toggler {
@@ -143,6 +148,37 @@ header {
 
 }
 
+@media only screen and (max-width: 1024px) {
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    .logo img {
+
+        height: 140px;
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    .header{
+        width: max-content;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 20px;
+    }
+}
+
+
 /* === === === === === === === === === === INICIO === === === === === === === === === === */
 
 
@@ -167,8 +203,16 @@ main {
     width: 100%;
 }
 
+@media only screen and (max-width: 425px) {
+
+    .imagenInicio{
+        width: 50%;
+    }
+}
+
 
 /* === === === === === === === === === === PRODUCTOS === === === === === === === === === === */
+
 
 .cardContainer {
     display: flex;
@@ -177,13 +221,13 @@ main {
     align-items: center;
     font-family: poppins;
     grid-column: 1/4;
-    padding: 30px 0px;
-    row-gap: 30px;
+    //padding: 30px 0px;
+    //row-gap: 30px;
 }
 
 .cardProducto {
     width: 25rem;
-    object-fit: contain;
+    //object-fit: contain;
     transition: 400ms;
 
     &:hover {
@@ -296,6 +340,16 @@ main {
         h4{
             font-size: 17px;
         } 
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .containerProductos{
+        width: min-content;
+    }
+
+    #seccionProductos{
+        width: min-content;
     }
 }
 
