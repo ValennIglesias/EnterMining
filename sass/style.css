@@ -100,7 +100,6 @@ header {
 .navbar-light .navbar-nav .nav-link {
   color: #F4D44B;
   font-size: 18px;
-  padding: 0 25px;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -150,7 +149,6 @@ header {
 @media only screen and (max-width: 1024px) {
   .navbar-light .navbar-nav .nav-link {
     font-size: 16px;
-    padding: 0 20px;
   }
   .logo img {
     height: 140px;
@@ -160,7 +158,6 @@ header {
 @media only screen and (max-width: 768px) {
   .navbar-light .navbar-nav .nav-link {
     font-size: 16px;
-    padding: 10px 0;
   }
   .header {
     width: 100%;
@@ -170,6 +167,9 @@ header {
 @media only screen and (max-width: 425px) {
   .navbar-light .navbar-nav .nav-link {
     font-size: 20px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 
@@ -190,6 +190,13 @@ header {
   background-position: center;
   height: 520px;
   width: 100%;
+  background-color: crimson;
+}
+
+@media only screen and (max-width: 425px) {
+  .imagenInicio {
+    width: 400px;
+  }
 }
 
 /* === === === === === === === === === === PRODUCTOS === === === === === === === === === === */
@@ -414,6 +421,24 @@ h4::selection {
   background-color: #F4D44B;
 }
 
+@media only screen and (max-width: 768px) {
+  .containerNosotros {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .imagenNosotros {
+    width: 100%;
+  }
+  .textoNosotros {
+    width: 100%;
+  }
+}
+
 .contacto {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -550,6 +575,42 @@ h4::selection {
   padding: 50px 0 0 0;
   height: 300px;
   width: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .contenedorForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contenedorForm form {
+    width: 100%;
+  }
+  .redes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+  }
+  .animacionRedes {
+    padding: 50px 0 0 0;
+    height: 400px;
+    width: auto;
+  }
 }
 
 .faq {
@@ -741,5 +802,12 @@ canvas {
   height: 300px !important;
   -o-object-fit: none;
      object-fit: none;
+}
+
+@media only screen and (max-width: 768px) {
+  footer .footerDerecha .encontranos {
+    color: #F4D44B;
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

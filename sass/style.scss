@@ -105,7 +105,6 @@ header {
 .navbar-light .navbar-nav .nav-link {
     color: #F4D44B;
     font-size: 18px;
-    padding: 0 25px;
 
         &:hover{
             color: #f4d54bb4;
@@ -148,7 +147,7 @@ header {
 @media only screen and (max-width: 1024px) {
     .navbar-light .navbar-nav .nav-link {
         font-size: 16px;
-        padding: 0 20px;
+
     }
 
     .logo img {
@@ -161,17 +160,18 @@ header {
 @media only screen and (max-width: 768px) {
     .navbar-light .navbar-nav .nav-link {
         font-size: 16px;
-        padding: 10px 0;
     }
 
     .header{
         width: 100%;
     }
+    
 }
 
 @media only screen and (max-width: 425px) {
     .navbar-light .navbar-nav .nav-link {
         font-size: 20px;
+        justify-content: space-evenly;
     }
 }
 
@@ -195,14 +195,15 @@ main {
     background-position: center;
     height: 520px;
     width: 100%;
+    background-color: crimson;
 }
 
-// @media only screen and (max-width: 425px) {
+@media only screen and (max-width: 425px) {
 
-//     .imagenInicio{
-//         width: 50%;
-//     }
-// }
+    .imagenInicio{
+        width: 400px;
+    }
+}
 
 
 /* === === === === === === === === === === PRODUCTOS === === === === === === === === === === */
@@ -337,15 +338,6 @@ main {
     }
 }
 
-// @media only screen and (max-width: 425px) {
-//     .containerProductos{
-//         width: min-content;
-//     }
-
-//     #seccionProductos{
-//         width: min-content;
-//     }
-// }
 
 // <!-- === === === === === NOSOTROS === === === === === --> //
 
@@ -401,6 +393,23 @@ h4 {
         background-color: #F4D44B;
     }
 }
+
+@media only screen and (max-width: 768px) {
+
+    .containerNosotros{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagenNosotros{
+        width: 100%;
+    }
+
+    .textoNosotros{
+        width: 100%;
+    }
+}
+
 
 // <!-- === === === === === CONTACTO === === === === === --> //
 
@@ -503,6 +512,34 @@ h4 {
     padding: 50px 0 0 0;
     height: 300px;
     width: auto;
+}
+
+@media only screen and (max-width: 768px){
+    .contenedorForm{
+        display: flex;
+        flex-direction: column;
+
+
+    }
+    .contenedorForm form {
+        width: 100%;
+      
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        
+}
+
+.animacionRedes {
+    padding: 50px 0 0 0;
+    height: 400px;
+    width: auto;
+}
 }
 
 
@@ -673,4 +710,13 @@ canvas {
     height: 300px !important;
 
     object-fit: none;
+}
+
+
+@media only screen and (max-width: 768px){
+    footer .footerDerecha .encontranos {
+        color: #F4D44B;
+        font-size: 20px;
+    }
+
 }
