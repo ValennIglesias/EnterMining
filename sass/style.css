@@ -17,13 +17,6 @@ html {
 }
 
 body {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 10% auto 10%;
-      grid-template-columns: 10% auto 10%;
-  -ms-grid-rows: min-content min-content min-content;
-      grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
-      grid-template-rows: min-content min-content min-content;
   background-color: #080808;
   background-size: cover;
   scroll-behavior: smooth;
@@ -41,12 +34,6 @@ h3 {
 
 /* === === === === === === === === === === HEADER === === === === === === === === === === */
 header {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1/4;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
   z-index: 100;
   position: -webkit-sticky;
   position: sticky;
@@ -176,9 +163,7 @@ header {
     padding: 10px 0;
   }
   .header {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
+    width: 100%;
   }
 }
 
@@ -189,15 +174,6 @@ header {
 }
 
 /* === === === === === === === === === === INICIO === === === === === === === === === === */
-main {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1/4;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-}
-
 .contenedorMain {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,12 +192,6 @@ main {
   width: 100%;
 }
 
-@media only screen and (max-width: 425px) {
-  .imagenInicio {
-    width: 50%;
-  }
-}
-
 /* === === === === === === === === === === PRODUCTOS === === === === === === === === === === */
 .cardContainer {
   display: -webkit-box;
@@ -235,9 +205,6 @@ main {
       -ms-flex-align: center;
           align-items: center;
   font-family: poppins;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1/4;
 }
 
 .cardProducto {
@@ -314,9 +281,6 @@ main {
       -ms-flex-align: center;
           align-items: center;
   font-family: poppins;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1/4;
   padding: 30px 0px;
   row-gap: 30px;
 }
@@ -362,9 +326,6 @@ main {
         -ms-flex-align: center;
             align-items: center;
     font-family: poppins;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-column: 1/4;
     padding: 30px 15px;
     row-gap: 30px;
   }
@@ -381,19 +342,6 @@ main {
   }
   .cardContainer h4 {
     font-size: 17px;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  .containerProductos {
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
-  }
-  #seccionProductos {
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
   }
 }
 
@@ -487,8 +435,6 @@ h4::selection {
 
 .contenedorForm form {
   width: 50%;
-  display: -ms-grid;
-  display: grid;
   justify-items: center;
 }
 
@@ -660,12 +606,6 @@ h4::selection {
 footer {
   border-top: 2px solid #F4D44B;
   margin-top: 150px;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1/4;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3/4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
