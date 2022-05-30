@@ -70,6 +70,7 @@ header {
 
     .logo img {
         height: 160px;
+        margin-left: 2rem ;
     }
 
     .menu {
@@ -104,7 +105,8 @@ header {
 
 .navbar-light .navbar-nav .nav-link {
     color: #F4D44B;
-    font-size: 18px;
+    font-size: 20px;
+    padding: 0 1.5rem;
 
         &:hover{
             color: #f4d54bb4;
@@ -133,9 +135,9 @@ header {
 
 }
 
-.navbar .container-fluid {
-    display: flex;
-    justify-content: flex-end;
+.navbar-collapse{
+    flex-direction: row-reverse;
+    margin-right: 5rem;
 }
 
 .navbar-nav {
@@ -145,10 +147,7 @@ header {
 }
 
 @media only screen and (max-width: 1024px) {
-    .navbar-light .navbar-nav .nav-link {
-        font-size: 16px;
-
-    }
+    
 
     .logo img {
 
@@ -157,20 +156,39 @@ header {
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .navbar-light .navbar-nav .nav-link {
-        font-size: 16px;
+@media only screen and (max-width: 992px){
+
+    .navbar-nav{
+        align-items: center;
     }
 
+    .navbar-collapse{
+        margin: 0;
+    }
+
+    .navbar-light .navbar-nav .nav-link{
+        padding: 0.3rem 0
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 20px;
+    }
+    
     .header{
         width: 100%;
+
+        .logo img{
+            margin-left: 0;
+        }
     }
     
 }
 
 @media only screen and (max-width: 425px) {
     .navbar-light .navbar-nav .nav-link {
-        font-size: 20px;
+        
         justify-content: space-evenly;
     }
 }
@@ -216,8 +234,8 @@ main {
     align-items: center;
     font-family: poppins;
     // grid-column: 1/4;
-    //padding: 30px 0px;
-    //row-gap: 30px;
+    padding: 30px 15px;
+    row-gap: 30px;
 }
 
 .cardProducto {
@@ -279,7 +297,7 @@ main {
     align-items: center;
     font-family: poppins;
     // grid-column: 1/4;
-    padding: 30px 0px;
+    padding: 30px 15px;
     row-gap: 30px;
 }
 
@@ -308,7 +326,7 @@ main {
 
 
 @media only screen and (max-width: 1366px) {
-
+    
     .cardContainer {
         display: flex;
         flex-wrap: wrap;
@@ -327,6 +345,37 @@ main {
                 transform: scale(1.1);
             }
         }
+        
+
+        .cardFooter {
+            font-size: 12px;
+        }
+
+        h4{
+            font-size: 17px;
+        } 
+        
+    }
+
+    .mostrar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        font-family: poppins;
+        // grid-column: 1/4;
+        padding: 30px 15px;
+        row-gap: 30px;
+
+        .cardProducto {
+            width: 18rem;
+            padding: 0px 20px;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        
 
         .cardFooter {
             font-size: 12px;
@@ -407,6 +456,7 @@ h4 {
 
     .textoNosotros{
         width: 100%;
+        font-size: 20px;
     }
 }
 
@@ -534,6 +584,7 @@ h4 {
         width: 100%;
         
 }
+
 
 .animacionRedes {
     padding: 50px 0 0 0;

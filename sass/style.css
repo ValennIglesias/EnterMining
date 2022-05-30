@@ -61,6 +61,7 @@ header {
 
 .header .logo img {
   height: 160px;
+  margin-left: 2rem;
 }
 
 .header .menu {
@@ -99,7 +100,8 @@ header {
 
 .navbar-light .navbar-nav .nav-link {
   color: #F4D44B;
-  font-size: 18px;
+  font-size: 20px;
+  padding: 0 1.5rem;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -128,13 +130,12 @@ header {
   background-image: url("../imagenes/bars-solid.svg");
 }
 
-.navbar .container-fluid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+.navbar-collapse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-right: 5rem;
 }
 
 .navbar-nav {
@@ -147,26 +148,39 @@ header {
 }
 
 @media only screen and (max-width: 1024px) {
-  .navbar-light .navbar-nav .nav-link {
-    font-size: 16px;
-  }
   .logo img {
     height: 140px;
   }
 }
 
+@media only screen and (max-width: 992px) {
+  .navbar-nav {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar-collapse {
+    margin: 0;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    padding: 0.3rem 0;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .navbar-light .navbar-nav .nav-link {
-    font-size: 16px;
+    font-size: 20px;
   }
   .header {
     width: 100%;
+  }
+  .header .logo img {
+    margin-left: 0;
   }
 }
 
 @media only screen and (max-width: 425px) {
   .navbar-light .navbar-nav .nav-link {
-    font-size: 20px;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -212,6 +226,8 @@ header {
       -ms-flex-align: center;
           align-items: center;
   font-family: poppins;
+  padding: 30px 15px;
+  row-gap: 30px;
 }
 
 .cardProducto {
@@ -288,7 +304,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   font-family: poppins;
-  padding: 30px 0px;
+  padding: 30px 15px;
   row-gap: 30px;
 }
 
@@ -348,6 +364,35 @@ header {
     font-size: 12px;
   }
   .cardContainer h4 {
+    font-size: 17px;
+  }
+  .mostrar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: poppins;
+    padding: 30px 15px;
+    row-gap: 30px;
+  }
+  .mostrar .cardProducto {
+    width: 18rem;
+    padding: 0px 20px;
+  }
+  .mostrar .cardProducto:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .mostrar .cardFooter {
+    font-size: 12px;
+  }
+  .mostrar h4 {
     font-size: 17px;
   }
 }
@@ -436,6 +481,7 @@ h4::selection {
   }
   .textoNosotros {
     width: 100%;
+    font-size: 20px;
   }
 }
 
