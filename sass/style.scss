@@ -197,10 +197,10 @@ header {
 /* === === === === === === === === === === INICIO === === === === === === === === === === */
 
 
-main {
+//main{
     // grid-column: 1/4;
     // grid-row: 2/3;
-}
+//}
 
 .contenedorMain {
     display: flex;
@@ -285,9 +285,53 @@ main {
     }
 }
 
+.modal-header{
+    background-color: #F4D44B;
+
+    h5{
+        font-weight: bold;
+    }
+}
+
+.modal-body{
+    background-color: rgb(8, 8, 8);
+    
+}
+
+th{
+    color: #F4D44B;
+    font-weight: bold;
+}
+
+
+
+td{
+    color: #fff;
+}
+
+.modal-footer{
+    background-color: rgb(8, 8, 8);
+
+    p{
+        color: #F4D44B;
+        font-weight: 500;
+
+        a{
+            font-weight: 900;
+            color:#F4D44B;
+
+            &:hover{
+                color: #fff;
+                transition: 300ms;
+            }
+        }
+    }
+}
+
 .masProductos {
     display: none;
 }
+
 
 
 .mostrar {

@@ -288,6 +288,47 @@ header {
   color: #F4D44B;
 }
 
+.modal-header {
+  background-color: #F4D44B;
+}
+
+.modal-header h5 {
+  font-weight: bold;
+}
+
+.modal-body {
+  background-color: #080808;
+}
+
+th {
+  color: #F4D44B;
+  font-weight: bold;
+}
+
+td {
+  color: #fff;
+}
+
+.modal-footer {
+  background-color: #080808;
+}
+
+.modal-footer p {
+  color: #F4D44B;
+  font-weight: 500;
+}
+
+.modal-footer p a {
+  font-weight: 900;
+  color: #F4D44B;
+}
+
+.modal-footer p a:hover {
+  color: #fff;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
 .masProductos {
   display: none;
 }
