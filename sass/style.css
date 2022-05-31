@@ -188,6 +188,17 @@ header {
 }
 
 /* === === === === === === === === === === INICIO === === === === === === === === === === */
+.botonWhapp {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 200;
+  background-color: #080808;
+  border-radius: 50%;
+  color: #F4D44B;
+  padding: 10px;
+}
+
 .contenedorMain {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -245,9 +256,9 @@ header {
 .cardImagen {
   background-image: url("../imagenes/flyerProductos.png");
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 400px;
+  height: 220px;
 }
 
 .cardFooter {
@@ -507,6 +518,35 @@ h4::selection {
   background-color: #F4D44B;
 }
 
+@media only screen and (max-width: 1440px) {
+  .imagenNosotros {
+    background-image: url(../imagenes/entermining.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 40%;
+    border: solid 2px #F4D44B;
+    -webkit-box-shadow: 2px 2px 10px 2px #F4D44B;
+            box-shadow: 2px 2px 10px 2px #F4D44B;
+  }
+  h4 {
+    font-size: 30px;
+    text-align: center;
+    color: #F4D44B;
+    letter-spacing: 3px;
+  }
+  .textoNosotros {
+    width: 50%;
+    color: white;
+    padding: 0 20px;
+    text-align: justify;
+    font-family: poppins;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .containerNosotros {
     display: -webkit-box;
@@ -642,7 +682,6 @@ h4::selection {
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 50%;
-  padding-top: 65px;
 }
 
 .redes p {
@@ -662,6 +701,35 @@ h4::selection {
   padding: 50px 0 0 0;
   height: 300px;
   width: auto;
+}
+
+@media only screen and (max-width: 1366px) {
+  .redes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 50%;
+  }
+  .redes p {
+    font-size: 30px;
+    font-weight: bold;
+    color: #F4D44B;
+    letter-spacing: 4px;
+    padding: 10px;
+  }
+  .fa-5x {
+    font-size: 4em !important;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -770,10 +838,9 @@ footer .footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 footer .footerIzquierda {
@@ -784,9 +851,6 @@ footer .footerIzquierda {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -802,6 +866,9 @@ footer .iconosPagos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 15px 0;
   width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -814,7 +881,6 @@ footer p {
 }
 
 footer .footerMedio {
-  width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -828,10 +894,10 @@ footer .footerMedio {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 25%;
 }
 
 footer .footerDerecha {
-  width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -842,6 +908,7 @@ footer .footerDerecha {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 25%;
 }
 
 footer .footerDerecha .encontranos {
@@ -895,6 +962,20 @@ canvas {
   footer .footerDerecha .encontranos {
     color: #F4D44B;
     font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  footer .iconosFooter {
+    width: 40px;
+    height: 25px;
+    background-color: #F4D44B;
+    border-radius: 5px;
+    padding: 2px;
+  }
+  .logoFooter {
+    height: 100px;
+    width: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

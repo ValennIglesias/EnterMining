@@ -49,28 +49,28 @@ header {
     position: sticky;
     top: 0px;
     width: 100%;
-    
-    
+
+
 }
 
 .containerHeader {
     background-color: rgb(8, 8, 8);
-   
+
 
 }
 
 .header {
-    
+
     height: min-content;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+
 
 
     .logo img {
         height: 160px;
-        margin-left: 2rem ;
+        margin-left: 2rem;
     }
 
     .menu {
@@ -80,15 +80,15 @@ header {
         column-gap: 45px;
         margin: 0;
 
-            a {
-                text-decoration: none;
-                color: rgb(244, 212, 75);
-                font-weight: 600;
-                transition: all ease 0.3s;
-                
-            }
+        a {
+            text-decoration: none;
+            color: rgb(244, 212, 75);
+            font-weight: 600;
+            transition: all ease 0.3s;
+
         }
     }
+}
 
 
 .navbar-light .navbar-toggler {
@@ -108,16 +108,16 @@ header {
     font-size: 20px;
     padding: 0 1.5rem;
 
-        &:hover{
-            color: #f4d54bb4;
-            text-decoration: overline;
-        }
+    &:hover {
+        color: #f4d54bb4;
+        text-decoration: overline;
+    }
 
-        &:focus{
-            color: #F4D44B;
-            //font-weight: bold;
-            //text-decoration: overline;
-        }
+    &:focus {
+        color: #F4D44B;
+        //font-weight: bold;
+        //text-decoration: overline;
+    }
 }
 
 .navbar-toggler {
@@ -135,7 +135,7 @@ header {
 
 }
 
-.navbar-collapse{
+.navbar-collapse {
     flex-direction: row-reverse;
     margin-right: 5rem;
 }
@@ -147,7 +147,7 @@ header {
 }
 
 @media only screen and (max-width: 1024px) {
-    
+
 
     .logo img {
 
@@ -156,17 +156,17 @@ header {
     }
 }
 
-@media only screen and (max-width: 992px){
+@media only screen and (max-width: 992px) {
 
-    .navbar-nav{
+    .navbar-nav {
         align-items: center;
     }
 
-    .navbar-collapse{
+    .navbar-collapse {
         margin: 0;
     }
 
-    .navbar-light .navbar-nav .nav-link{
+    .navbar-light .navbar-nav .nav-link {
         padding: 0.3rem 0
     }
 }
@@ -175,20 +175,20 @@ header {
     .navbar-light .navbar-nav .nav-link {
         font-size: 20px;
     }
-    
-    .header{
+
+    .header {
         width: 100%;
 
-        .logo img{
+        .logo img {
             margin-left: 0;
         }
     }
-    
+
 }
 
 @media only screen and (max-width: 425px) {
     .navbar-light .navbar-nav .nav-link {
-        
+
         justify-content: space-evenly;
     }
 }
@@ -197,10 +197,19 @@ header {
 /* === === === === === === === === === === INICIO === === === === === === === === === === */
 
 
-//main{
-    // grid-column: 1/4;
-    // grid-row: 2/3;
-//}
+.botonWhapp {
+
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 200;
+    background-color: rgb(8, 8, 8);
+    border-radius: 50%;
+    color: #F4D44B;
+    padding: 10px;
+
+}
+
 
 .contenedorMain {
     display: flex;
@@ -218,7 +227,7 @@ header {
 
 @media only screen and (max-width: 425px) {
 
-    .imagenInicio{
+    .imagenInicio {
         width: 400px;
     }
 }
@@ -252,9 +261,9 @@ header {
 .cardImagen {
     background-image: url("../imagenes/flyerProductos.png");
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 220px;
 }
 
 .cardFooter {
@@ -285,42 +294,42 @@ header {
     }
 }
 
-.modal-header{
+.modal-header {
     background-color: #F4D44B;
 
-    h5{
+    h5 {
         font-weight: bold;
     }
 }
 
-.modal-body{
+.modal-body {
     background-color: rgb(8, 8, 8);
-    
+
 }
 
-th{
+th {
     color: #F4D44B;
     font-weight: bold;
 }
 
 
 
-td{
+td {
     color: #fff;
 }
 
-.modal-footer{
+.modal-footer {
     background-color: rgb(8, 8, 8);
 
-    p{
+    p {
         color: #F4D44B;
         font-weight: 500;
 
-        a{
+        a {
             font-weight: 900;
-            color:#F4D44B;
+            color: #F4D44B;
 
-            &:hover{
+            &:hover {
                 color: #fff;
                 transition: 300ms;
             }
@@ -370,14 +379,13 @@ td{
 
 
 @media only screen and (max-width: 1366px) {
-    
+
     .cardContainer {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
         font-family: poppins;
-        // grid-column: 1/4;
         padding: 30px 15px;
         row-gap: 30px;
 
@@ -389,16 +397,16 @@ td{
                 transform: scale(1.1);
             }
         }
-        
+
 
         .cardFooter {
             font-size: 12px;
         }
 
-        h4{
+        h4 {
             font-size: 17px;
-        } 
-        
+        }
+
     }
 
     .mostrar {
@@ -419,15 +427,15 @@ td{
                 transform: scale(1.1);
             }
         }
-        
+
 
         .cardFooter {
             font-size: 12px;
         }
 
-        h4{
+        h4 {
             font-size: 17px;
-        } 
+        }
     }
 }
 
@@ -487,18 +495,51 @@ h4 {
     }
 }
 
+@media only screen and (max-width: 1440px) {
+
+    .imagenNosotros {
+        background-image: url(../imagenes/entermining.jpg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 400px;
+        width: 40%;
+        border: solid 2px #F4D44B;
+        box-shadow: 2px 2px 10px 2px #F4D44B;
+    }
+
+    h4 {
+        font-size: 30px;
+        text-align: center;
+        color: #F4D44B;
+        letter-spacing: 3px;
+    }
+
+
+    .textoNosotros {
+        width: 50%;
+        color: white;
+        padding: 0 20px;
+        text-align: justify;
+        font-family: poppins;
+        font-size: 20px;
+        line-height: 30px;
+
+    }
+}
+
 @media only screen and (max-width: 768px) {
 
-    .containerNosotros{
+    .containerNosotros {
         display: flex;
         flex-direction: column;
     }
 
-    .imagenNosotros{
+    .imagenNosotros {
         width: 100%;
     }
 
-    .textoNosotros{
+    .textoNosotros {
         width: 100%;
         font-size: 20px;
     }
@@ -586,7 +627,8 @@ h4 {
     align-items: center;
     justify-content: flex-start;
     width: 50%;
-    padding-top: 65px;
+    // padding-top: 65px;
+
 
     p {
         font-size: 50px;
@@ -608,16 +650,43 @@ h4 {
     width: auto;
 }
 
-@media only screen and (max-width: 768px){
-    .contenedorForm{
+
+@media only screen and (max-width: 1366px) {
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 50%;
+    }
+
+
+    .redes p {
+        font-size: 30px;
+        font-weight: bold;
+        color: #F4D44B;
+        letter-spacing: 4px;
+        padding: 10px;
+    }
+
+    .fa-5x {
+        font-size: 4em !important;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .contenedorForm {
         display: flex;
         flex-direction: column;
 
 
     }
+
     .contenedorForm form {
         width: 100%;
-      
+
     }
 
     .redes {
@@ -626,15 +695,15 @@ h4 {
         align-items: center;
         justify-content: flex-start;
         width: 100%;
-        
-}
+
+    }
 
 
-.animacionRedes {
-    padding: 50px 0 0 0;
-    height: 400px;
-    width: auto;
-}
+    .animacionRedes {
+        padding: 50px 0 0 0;
+        height: 400px;
+        width: auto;
+    }
 }
 
 
@@ -700,23 +769,19 @@ h4 {
 footer {
     border-top: 2px solid #F4D44B;
     margin-top: 150px;
-    // grid-column: 1/4;
-    // grid-row: 3/4;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 
     .footer {
         display: flex;
-        width: 90%;
-
-        justify-content: space-between;
+        width: 100%;
+        justify-content: space-around;
     }
 
     .footerIzquierda {
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
         width: 25%;
 
@@ -726,15 +791,15 @@ footer {
         }
     }
 
-
-
     .iconosPagos {
         display: flex;
+        flex-wrap: wrap;
+        padding: 15px 0;
         width: 100%;
         justify-content: space-between;
+        
     }
 
-    // background-color: grey;
     p {
         color: white;
         text-align: center;
@@ -743,18 +808,20 @@ footer {
     }
 
     .footerMedio {
-        width: 25%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 25%;
+
     }
 
     .footerDerecha {
-        width: 25%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 25%;
+
 
         .encontranos {
             color: #F4D44B;
@@ -803,15 +870,46 @@ canvas {
     background-size: contain;
     z-index: -1;
     height: 300px !important;
-
     object-fit: none;
 }
 
+// @media only screen and (max-width: 825px){
 
-@media only screen and (max-width: 768px){
+//     .iconosPagos {
+//         background-color: aqua;
+//     }
+
+
+
+// }
+
+
+@media only screen and (max-width: 768px) {
     footer .footerDerecha .encontranos {
         color: #F4D44B;
         font-size: 20px;
     }
+
+}
+
+@media only screen and (max-width: 425px) {
+
+    footer .iconosFooter {
+        width: 40px;
+        height: 25px;
+        background-color: #F4D44B;
+        border-radius: 5px;
+        padding: 2px;
+        
+
+    }
+
+    .logoFooter {
+
+        height: 100px;
+        width: auto;
+    
+    }
+   
 
 }
