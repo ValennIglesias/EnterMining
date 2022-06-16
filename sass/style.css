@@ -17,19 +17,18 @@ html {
 }
 
 body {
-  background-color: #080808;
   background-size: cover;
   scroll-behavior: smooth;
   font-family: poppins;
+  background-color: black;
 }
 
 h3 {
-  color: #F4D44B;
   font-family: 'poppins';
   text-align: center;
-  font-size: 50px;
-  padding-top: 200px;
+  padding-top: 100px;
   padding-bottom: 30px;
+  font-size: 30px;
 }
 
 /* === === === === === === === === === === HEADER === === === === === === === === === === */
@@ -78,14 +77,14 @@ header {
   -webkit-column-gap: 45px;
           column-gap: 45px;
   margin: 0;
+  height: 110px;
 }
 
 .header .menu a {
   text-decoration: none;
-  color: #f4d44b;
-  font-weight: 600;
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
+  color: white;
 }
 
 .navbar-light .navbar-toggler {
@@ -95,22 +94,18 @@ header {
 }
 
 .navbar {
-  background-color: transparent;
+  background-color: black;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #F4D44B;
-  font-size: 20px;
+  color: white;
+  font-size: 17px;
   padding: 0 1.5rem;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #f4d54bb4;
   text-decoration: overline;
-}
-
-.navbar-light .navbar-nav .nav-link:focus {
-  color: #F4D44B;
+  color: white;
 }
 
 .navbar-toggler {
@@ -195,7 +190,7 @@ header {
   z-index: 200;
   background-color: #080808;
   border-radius: 50%;
-  color: #F4D44B;
+  color: white;
   padding: 10px;
 }
 
@@ -207,6 +202,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin: 0;
 }
 
 .imagenInicio {
@@ -215,7 +211,7 @@ header {
   background-position: center;
   height: 520px;
   width: 100%;
-  background-color: crimson;
+  background-color: white;
 }
 
 @media only screen and (max-width: 425px) {
@@ -225,6 +221,18 @@ header {
 }
 
 /* === === === === === === === === === === PRODUCTOS === === === === === === === === === === */
+.containerProductos {
+  background-color: white;
+}
+
+.tituloProductos {
+  background-color: white;
+  color: black;
+  margin-bottom: 0;
+  letter-spacing: 3px;
+  padding: 30px 0 10px 0;
+}
+
 .cardContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -239,6 +247,7 @@ header {
   font-family: poppins;
   padding: 30px 15px;
   row-gap: 30px;
+  background-color: white;
 }
 
 .cardProducto {
@@ -247,32 +256,34 @@ header {
   transition: 400ms;
 }
 
-.cardProducto:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-  border: 2px solid #F4D44B;
-}
-
 .cardImagen {
-  background-image: url("../imagenes/flyerProductos.png");
+  background-image: url("../imagenes/DSC01639.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 220px;
+  -webkit-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+}
+
+.cardImagen:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  border: none;
 }
 
 .cardFooter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: #F4D44B;
+  color: black;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -281,22 +292,29 @@ header {
   padding: 10px;
 }
 
+.cardFooter h4 {
+  padding-top: 20px;
+  color: black;
+}
+
 .cardFooter button {
   font-family: poppins;
-  padding: 10px 20px;
-  background-color: #F4D44B;
+  padding: 10px 40px;
   color: #000;
-  border: none;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
   letter-spacing: 3px;
   font-weight: bold;
   cursor: pointer;
-  -webkit-transition: ease 350ms;
-  transition: ease 350ms;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
 }
 
 .cardFooter button:hover {
   background-color: #0c0c0c;
-  color: #F4D44B;
+  color: white;
+  letter-spacing: 5px;
 }
 
 .modal-header {
@@ -367,25 +385,27 @@ td {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 20px;
+  background-color: white;
+  padding-bottom: 50px;
 }
 
 #VerMas {
   font-family: poppins;
   padding: 10px 20px;
-  background-color: #F4D44B;
+  background-color: transparent;
   color: #000;
-  border: none;
+  border: 1px solid black;
+  border-radius: 5px;
   letter-spacing: 3px;
   font-weight: bold;
   cursor: pointer;
-  -webkit-transition: ease 350ms;
-  transition: ease 350ms;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
 }
 
 #VerMas:hover {
   background-color: #0c0c0c;
-  color: #F4D44B;
+  color: white;
 }
 
 @media only screen and (max-width: 1366px) {
@@ -407,10 +427,6 @@ td {
   .cardContainer .cardProducto {
     width: 18rem;
     padding: 0px 20px;
-  }
-  .cardContainer .cardProducto:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
   }
   .cardContainer .cardFooter {
     font-size: 12px;
@@ -449,6 +465,14 @@ td {
   }
 }
 
+.tituloNosotros {
+  background-color: black;
+  color: white;
+  padding: 0;
+  margin: 0;
+  padding-top: 45px;
+}
+
 .nosotros {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -456,6 +480,8 @@ td {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: black;
+  padding-top: 45px;
 }
 
 .containerNosotros {
@@ -474,15 +500,12 @@ td {
 }
 
 .imagenNosotros {
-  background-image: url(../imagenes/entermining.jpg);
+  background-image: url(../imagenes/DSC01516.jpg);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 500px;
   width: 45%;
-  border: solid 2px #F4D44B;
-  -webkit-box-shadow: 2px 2px 10px 2px #F4D44B;
-          box-shadow: 2px 2px 10px 2px #F4D44B;
 }
 
 .textoNosotros {
@@ -490,45 +513,39 @@ td {
   color: white;
   padding: 0 20px;
   text-align: justify;
-  font-family: poppins;
-  font-size: 25px;
   line-height: 40px;
 }
 
 .textoNosotros::-moz-selection {
-  background-color: #F4D44B;
+  background-color: #1b1b1b;
 }
 
 .textoNosotros::selection {
-  background-color: #F4D44B;
+  background-color: #1b1b1b;
 }
 
-h4 {
-  font-size: 35px;
+h6 {
+  font-size: 30px;
   text-align: center;
-  color: #F4D44B;
+  color: white;
   letter-spacing: 3px;
 }
 
-h4::-moz-selection {
-  background-color: #F4D44B;
+h6::-moz-selection {
+  background-color: #1b1b1b;
 }
 
-h4::selection {
-  background-color: #F4D44B;
+h6::selection {
+  background-color: #1b1b1b;
 }
 
 @media only screen and (max-width: 1440px) {
   .imagenNosotros {
-    background-image: url(../imagenes/entermining.jpg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     height: 400px;
     width: 40%;
-    border: solid 2px #F4D44B;
-    -webkit-box-shadow: 2px 2px 10px 2px #F4D44B;
-            box-shadow: 2px 2px 10px 2px #F4D44B;
   }
   h4 {
     font-size: 30px;
@@ -820,7 +837,6 @@ h4::selection {
 }
 
 footer {
-  border-top: 2px solid #F4D44B;
   margin-top: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -832,6 +848,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-top: 2px solid white;
 }
 
 footer .footer {
@@ -912,7 +929,7 @@ footer .footerDerecha {
 }
 
 footer .footerDerecha .encontranos {
-  color: #F4D44B;
+  color: white;
   font-size: 24px;
 }
 
@@ -922,7 +939,6 @@ footer .footerDerecha .direccion {
 }
 
 footer .footerDerecha .direccion:hover {
-  color: #F4D44B;
   -webkit-transition: 400ms;
   transition: 400ms;
 }
@@ -939,7 +955,7 @@ footer .footerDerecha .iconosRedes {
 footer .iconosFooter {
   width: 60px;
   height: 40px;
-  background-color: #f4d44b;
+  background-color: #ffffff;
   border-radius: 5px;
   padding: 2px;
 }
