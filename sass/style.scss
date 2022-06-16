@@ -171,6 +171,34 @@ header {
     border-radius: 50%;
     color: white;
     padding: 10px;
+    animation: flotar 1.5s linear  ;
+    animation-iteration-count: 2;
+    animation-delay: 5s;
+    animation-timeline:2s;
+        &:hover{
+            background-color: rgb(255, 255, 255);
+            color: #000;
+            transition: 650ms;
+        }
+}
+
+@keyframes flotar {
+    25%{
+        transform: translateY(-20px);
+    }
+
+    50%{
+        transform: translateY(0px);
+
+    }
+
+    75%{
+        transform: translateY(-10px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
 }
 
 .contenedorMain {
@@ -206,6 +234,7 @@ header {
     margin-bottom: 0;
     letter-spacing: 3px;
     padding: 50px 0 10px 0;
+    
 }
 
 .cardContainer {
@@ -217,11 +246,13 @@ header {
     padding: 30px 15px;
     row-gap: 30px;
     background-color: white;
+    
 }
 
 .cardProducto {
     width: 25rem;
     transition: 400ms; 
+    cursor: pointer;
 }
 
 .cardImagen {
@@ -229,7 +260,7 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 220px;
+    height: 250px;
     transition:all ease 0.8s;
 
 
@@ -603,6 +634,12 @@ h6 {
 .icon {
     color: #ffffff;
     padding: 10px;
+
+        &:hover{
+            color: rgba(255, 255, 255, 0.596);
+            transform:translateY(-10px);
+            
+        }
 }
 
 .animacionRedes {

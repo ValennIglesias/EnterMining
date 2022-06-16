@@ -193,6 +193,58 @@ header {
   border-radius: 50%;
   color: white;
   padding: 10px;
+  -webkit-animation: flotar 1.5s linear;
+          animation: flotar 1.5s linear;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  animation-timeline: 2s;
+}
+
+.botonWhapp:hover {
+  background-color: white;
+  color: #000;
+  -webkit-transition: 650ms;
+  transition: 650ms;
+}
+
+@-webkit-keyframes flotar {
+  25% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  50% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  75% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes flotar {
+  25% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  50% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  75% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 
 .contenedorMain {
@@ -255,6 +307,7 @@ header {
   width: 25rem;
   -webkit-transition: 400ms;
   transition: 400ms;
+  cursor: pointer;
 }
 
 .cardImagen {
@@ -262,7 +315,7 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 220px;
+  height: 250px;
   -webkit-transition: all ease 0.8s;
   transition: all ease 0.8s;
 }
@@ -708,6 +761,12 @@ h6::selection {
 .icon {
   color: #ffffff;
   padding: 10px;
+}
+
+.icon:hover {
+  color: rgba(255, 255, 255, 0.596);
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .animacionRedes {
