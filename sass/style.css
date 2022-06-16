@@ -26,8 +26,6 @@ body {
 h3 {
   font-family: 'poppins';
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 30px;
   font-size: 30px;
 }
 
@@ -101,10 +99,13 @@ header {
   color: white;
   font-size: 17px;
   padding: 0 1.5rem;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  text-decoration: overline;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   color: white;
 }
 
@@ -230,7 +231,7 @@ header {
   color: black;
   margin-bottom: 0;
   letter-spacing: 3px;
-  padding: 30px 0 10px 0;
+  padding: 50px 0 10px 0;
 }
 
 .cardContainer {
@@ -318,19 +319,19 @@ header {
 }
 
 .modal-header {
-  background-color: #F4D44B;
+  background-color: #000000;
 }
 
 .modal-header h5 {
-  font-weight: bold;
+  color: white;
 }
 
 .modal-body {
-  background-color: #080808;
+  background-color: black;
 }
 
 th {
-  color: #F4D44B;
+  color: #ffffff;
   font-weight: bold;
 }
 
@@ -339,17 +340,17 @@ td {
 }
 
 .modal-footer {
-  background-color: #080808;
+  background-color: black;
 }
 
 .modal-footer p {
-  color: #F4D44B;
+  color: #ffffff;
   font-weight: 500;
 }
 
 .modal-footer p a {
   font-weight: 900;
-  color: #F4D44B;
+  color: #ffffff;
 }
 
 .modal-footer p a:hover {
@@ -471,6 +472,7 @@ td {
   padding: 0;
   margin: 0;
   padding-top: 45px;
+  letter-spacing: 3px;
 }
 
 .nosotros {
@@ -514,6 +516,7 @@ td {
   padding: 0 20px;
   text-align: justify;
   line-height: 40px;
+  font-size: 18px;
 }
 
 .textoNosotros::-moz-selection {
@@ -547,19 +550,12 @@ h6::selection {
     height: 400px;
     width: 40%;
   }
-  h4 {
-    font-size: 30px;
-    text-align: center;
-    color: #F4D44B;
-    letter-spacing: 3px;
-  }
   .textoNosotros {
     width: 50%;
     color: white;
     padding: 0 20px;
     text-align: justify;
     font-family: poppins;
-    font-size: 20px;
     line-height: 30px;
   }
 }
@@ -579,8 +575,16 @@ h6::selection {
   }
   .textoNosotros {
     width: 100%;
-    font-size: 20px;
   }
+}
+
+.tituloContacto {
+  background-color: black;
+  color: white;
+  padding: 0;
+  margin: 0;
+  padding: 0 0 10px 0;
+  letter-spacing: 3px;
 }
 
 .contacto {
@@ -610,7 +614,6 @@ h6::selection {
 .contenedorForm form h2 {
   font-family: poppins;
   font-size: 22px;
-  font-weight: bold;
   letter-spacing: 3px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -624,34 +627,28 @@ h6::selection {
 .contenedorForm form .formInput {
   font-family: poppins;
   font-size: 20px;
-  font-weight: bold;
   background-color: transparent;
   border: none;
-  border-bottom: 2.5px solid #F4D44B;
+  border-bottom: 2.5px solid #ffffff;
   outline: none;
   width: 90%;
-  padding: 40px 25px;
-  color: #F4D44B;
+  padding: 30px 25px;
 }
 
 .contenedorForm form .formInput::-webkit-input-placeholder {
-  color: #F4D44B;
-  font-weight: bold;
+  color: #ffffff;
 }
 
 .contenedorForm form .formInput:-ms-input-placeholder {
-  color: #F4D44B;
-  font-weight: bold;
+  color: #ffffff;
 }
 
 .contenedorForm form .formInput::-ms-input-placeholder {
-  color: #F4D44B;
-  font-weight: bold;
+  color: #ffffff;
 }
 
 .contenedorForm form .formInput::placeholder {
-  color: #F4D44B;
-  font-weight: bold;
+  color: #ffffff;
 }
 
 .contenedorForm form .boton {
@@ -666,22 +663,21 @@ h6::selection {
 
 .contenedorForm form .boton .inputBoton {
   padding: 10px 50px;
-  border: 2px solid #F4D44B;
+  border: 2px solid #ffffff;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 16px;
   font-family: poppins;
-  font-weight: bold;
   background-color: transparent;
-  letter-spacing: 1px;
-  color: #F4D44B;
+  letter-spacing: 3px;
+  color: #ffffff;
   cursor: pointer;
   -webkit-transition: all ease 0.8s;
   transition: all ease 0.8s;
 }
 
 .contenedorForm form .boton .inputBoton:hover {
-  background-color: #F4D44B;
-  color: #fff;
+  background-color: #ffffff;
+  color: #000;
 }
 
 .redes {
@@ -704,13 +700,13 @@ h6::selection {
 .redes p {
   font-size: 50px;
   font-weight: bold;
-  color: #F4D44B;
+  color: #ffffff;
   letter-spacing: 4px;
   padding: 10px;
 }
 
 .icon {
-  color: #F4D44B;
+  color: #ffffff;
   padding: 10px;
 }
 
@@ -740,7 +736,6 @@ h6::selection {
   .redes p {
     font-size: 30px;
     font-weight: bold;
-    color: #F4D44B;
     letter-spacing: 4px;
     padding: 10px;
   }
@@ -785,6 +780,15 @@ h6::selection {
   }
 }
 
+.tituloFaq {
+  background-color: black;
+  color: white;
+  padding: 0;
+  margin: 0;
+  padding: 50px 0 60px 0;
+  letter-spacing: 3px;
+}
+
 .faq {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -795,13 +799,13 @@ h6::selection {
 }
 
 .accordion {
-  border: 1px solid #F4D44B;
+  border: 1px solid #ffffff;
   width: 90%;
 }
 
 .accordion-button {
-  color: #F4D44B;
-  border: 1px solid #F4D44B;
+  color: #ffffff;
+  border: 1px solid #ffffff;
   padding: 30px 10px;
 }
 
@@ -810,12 +814,12 @@ h6::selection {
 }
 
 .accordion-button:not(.collapsed) {
-  color: #F4D44B;
+  color: #ffffff;
   background-color: transparent;
 }
 
 .accordion-button:focus {
-  border: 1px solid #f4d44b;
+  border: 1px solid #ffffff;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -825,11 +829,11 @@ h6::selection {
 }
 
 .accordion-collapse {
-  color: #F4D44B;
+  color: #ffffff;
 }
 
 .accordion-body {
-  color: #F4D44B;
+  color: #ffffff;
 }
 
 .accordion-button::after {

@@ -26,8 +26,6 @@ body {
 h3 {
     font-family: 'poppins';
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 30px;
     font-size: 30px;
 }
 
@@ -65,13 +63,11 @@ header {
 
         a {
             text-decoration: none;
-            // font-weight: 600;
             transition: all ease 0.3s;
             color: white;
         }
     }
 }
-
 
 .navbar-light .navbar-toggler {
     color: rgba(0, 0, 0, .55);
@@ -87,9 +83,10 @@ header {
     color: white;
     font-size: 17px;
     padding: 0 1.5rem;
+    transition: all ease-in-out 0.4s;
 
     &:hover {
-        text-decoration: overline;
+        transform: scale(1.1);
         color: white;
     }
 }
@@ -154,7 +151,6 @@ header {
             margin-left: 0;
         }
     }
-
 }
 
 @media only screen and (max-width: 425px) {
@@ -164,9 +160,7 @@ header {
     }
 }
 
-
 /* === === === === === === === === === === INICIO === === === === === === === === === === */
-
 
 .botonWhapp {
     position: fixed;
@@ -178,7 +172,6 @@ header {
     color: white;
     padding: 10px;
 }
-
 
 .contenedorMain {
     display: flex;
@@ -202,9 +195,7 @@ header {
     }
 }
 
-
 /* === === === === === === === === === === PRODUCTOS === === === === === === === === === === */
-
 
 .containerProductos{
     background-color: white;
@@ -214,7 +205,7 @@ header {
     color: black;
     margin-bottom: 0;
     letter-spacing: 3px;
-    padding: 30px 0 10px 0;
+    padding: 50px 0 10px 0;
 }
 
 .cardContainer {
@@ -284,38 +275,37 @@ header {
 }
 
 .modal-header {
-    background-color: #F4D44B;
+    background-color: #000000;
 
     h5 {
-        font-weight: bold;
+        color:white
+        
     }
 }
 
 .modal-body {
-    background-color: rgb(8, 8, 8);
+    background-color: rgb(0, 0, 0);
 }
 
 th {
-    color: #F4D44B;
+    color: #ffffff;
     font-weight: bold;
 }
-
-
 
 td {
     color: #fff;
 }
 
 .modal-footer {
-    background-color: rgb(8, 8, 8);
+    background-color: rgb(0, 0, 0);
 
     p {
-        color: #F4D44B;
+        color: #ffffff;
         font-weight: 500;
 
         a {
             font-weight: 900;
-            color: #F4D44B;
+            color: #ffffff;
 
             &:hover {
                 color: #fff;
@@ -342,7 +332,6 @@ td {
 .verMas {
     display: flex;
     justify-content: center;
-    // margin: 20px;
     background-color: white;
     padding-bottom: 50px;
 }
@@ -365,7 +354,6 @@ td {
     }
 }
 
-
 @media only screen and (max-width: 1366px) {
 
     .cardContainer {
@@ -382,7 +370,6 @@ td {
             padding: 0px 20px;
         }
 
-
         .cardFooter {
             font-size: 12px; 
         }
@@ -390,7 +377,6 @@ td {
         h4 {
             font-size: 17px;
         }
-
     }
 
     .mostrar {
@@ -421,7 +407,6 @@ td {
     }
 }
 
-
 // <!-- === === === === === NOSOTROS === === === === === --> //
 
 .tituloNosotros{
@@ -430,14 +415,14 @@ td {
     padding: 0;
     margin: 0;
     padding-top: 45px;
-
+    letter-spacing: 3px;
 }
+
 .nosotros {
     display: flex;
     justify-content: center;
     background-color: black;
     padding-top: 45px;
-
 }
 
 .containerNosotros {
@@ -446,7 +431,6 @@ td {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 100px;
-
 }
 
 .imagenNosotros {
@@ -464,7 +448,7 @@ td {
     padding: 0 20px;
     text-align: justify;
     line-height: 40px;
-
+    font-size: 18px;
 
     &::selection {
         background-color: #1b1b1b;
@@ -494,21 +478,12 @@ h6 {
         
     }
 
-    h4 {
-        font-size: 30px;
-        text-align: center;
-        color: #F4D44B;
-        letter-spacing: 3px;
-    }
-
-
     .textoNosotros {
         width: 50%;
         color: white;
         padding: 0 20px;
         text-align: justify;
         font-family: poppins;
-        font-size: 20px;
         line-height: 30px;
 
     }
@@ -527,16 +502,25 @@ h6 {
 
     .textoNosotros {
         width: 100%;
-        font-size: 20px;
     }
 }
 
 
 // <!-- === === === === === CONTACTO === === === === === --> //
 
+
+.tituloContacto{
+    background-color: black;
+    color: white;
+    padding: 0;
+    margin: 0;
+    padding: 0 0 10px 0;
+    letter-spacing: 3px;
+}
+
 .contacto {
     display: flex;
-    justify-content: center;
+    justify-content: center;  
 }
 
 .contenedorForm {
@@ -547,14 +531,11 @@ h6 {
 
     form {
         width: 50%;
-        // display: grid;
         justify-items: center;
-
 
         h2 {
             font-family: poppins;
             font-size: 22px;
-            font-weight: bold;
             letter-spacing: 3px;
             display: flex;
             justify-content: center;
@@ -564,19 +545,16 @@ h6 {
         .formInput {
             font-family: poppins;
             font-size: 20px;
-            font-weight: bold;
             background-color: transparent;
             border: none;
-            border-bottom: 2.5px solid #F4D44B;
+            border-bottom: 2.5px solid #ffffff;
             outline: none;
             width: 90%;
-            padding: 40px 25px;
-            color: #F4D44B;
+            padding: 30px 25px;
         }
 
         .formInput::placeholder {
-            color: #F4D44B;
-            font-weight: bold;
+            color: #ffffff;
         }
 
         .boton {
@@ -587,20 +565,19 @@ h6 {
 
             .inputBoton {
                 padding: 10px 50px;
-                border: 2px solid #F4D44B;
+                border: 2px solid #ffffff;
                 border-radius: 5px;
-                font-size: 18px;
+                font-size: 16px;
                 font-family: poppins;
-                font-weight: bold;
                 background-color: transparent;
-                letter-spacing: 1px;
-                color: #F4D44B;
+                letter-spacing: 3px;
+                color: #ffffff;
                 cursor: pointer;
                 transition: all ease 0.8s;
 
                 &:hover {
-                    background-color: #F4D44B;
-                    color: #fff;
+                    background-color: #ffffff;
+                    color: #000;
                 }
             }
         }
@@ -613,20 +590,18 @@ h6 {
     align-items: center;
     justify-content: flex-start;
     width: 50%;
-    // padding-top: 65px;
-
-
+    
     p {
         font-size: 50px;
         font-weight: bold;
-        color: #F4D44B;
+        color: #ffffff;
         letter-spacing: 4px;
         padding: 10px;
     }
 }
 
 .icon {
-    color: #F4D44B;
+    color: #ffffff;
     padding: 10px;
 }
 
@@ -647,11 +622,9 @@ h6 {
         width: 50%;
     }
 
-
     .redes p {
         font-size: 30px;
         font-weight: bold;
-        color: #F4D44B;
         letter-spacing: 4px;
         padding: 10px;
     }
@@ -666,13 +639,10 @@ h6 {
     .contenedorForm {
         display: flex;
         flex-direction: column;
-
-
     }
 
     .contenedorForm form {
         width: 100%;
-
     }
 
     .redes {
@@ -681,9 +651,7 @@ h6 {
         align-items: center;
         justify-content: flex-start;
         width: 100%;
-
     }
-
 
     .animacionRedes {
         padding: 50px 0 0 0;
@@ -695,19 +663,27 @@ h6 {
 
 // <!-- === === === === === FAQ === === === === === --> //
 
+.tituloFaq{
+    background-color: black;
+    color: white;
+    padding: 0;
+    margin: 0;
+    padding: 50px 0 60px 0;
+    letter-spacing: 3px;
+}
 .faq {
     display: flex;
     justify-content: center;
 }
 
 .accordion {
-    border: 1px solid #F4D44B;
+    border: 1px solid #ffffff;
     width: 90%;
 }
 
 .accordion-button {
-    color: #F4D44B;
-    border: 1px solid #F4D44B;
+    color: #ffffff;
+    border: 1px solid #ffffff;
     padding: 30px 10px;
 }
 
@@ -716,13 +692,13 @@ h6 {
 }
 
 .accordion-button:not(.collapsed) {
-    color: #F4D44B;
+    color: #ffffff;
     background-color: transparent;
 
 }
 
 .accordion-button:focus {
-    border: 1px solid rgb(244, 212, 75);
+    border: 1px solid #ffffff;
     box-shadow: none;
 }
 
@@ -736,11 +712,11 @@ h6 {
 
 
 .accordion-collapse {
-    color: #F4D44B;
+    color: #ffffff;
 }
 
 .accordion-body {
-    color: #F4D44B;
+    color: #ffffff;
 
 }
 
