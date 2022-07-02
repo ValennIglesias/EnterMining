@@ -1,4 +1,10 @@
 /* === === === === === === === === === === FONTS === === === === === === === === === === */
+@font-face {
+  font-family: poppins;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+/* === === === === === === === === === === GENERAL === === === === === === === === === === */
 * {
   margin: 0;
   padding: 0;
@@ -6,12 +12,29 @@
           box-sizing: border-box;
 }
 
-@font-face {
-  font-family: poppins;
-  src: url(../fonts/Poppins-Regular.ttf);
+::-webkit-scrollbar {
+  width: 15px;
 }
 
-/* === === === === === === === === === === GENERAL === === === === === === === === === === */
+::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+
+::-moz-selection {
+  background-color: #B89B86;
+  color: #ffffff;
+}
+
+::selection {
+  background-color: #B89B86;
+  color: #ffffff;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -329,11 +352,11 @@ header {
   -webkit-transition: 400ms;
   transition: 400ms;
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.5);
-  -webkit-box-shadow: 0 8px 32px 0 rgba(52, 53, 54, 0.37);
-          box-shadow: 0 8px 32px 0 rgba(52, 53, 54, 0.37);
-  backdrop-filter: blur(9.5px);
-  -webkit-backdrop-filter: blur(9.5px);
+  background: rgba(255, 255, 255, 0.65);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
@@ -346,6 +369,7 @@ header {
   height: 250px;
   -webkit-transition: all ease 0.8s;
   transition: all ease 0.8s;
+  border-radius: 10px;
 }
 
 .cardImagen:hover {
@@ -362,6 +386,7 @@ header {
   height: 250px;
   -webkit-transition: all ease 0.8s;
   transition: all ease 0.8s;
+  border-radius: 10px;
 }
 
 .cardImagen2:hover {
@@ -378,6 +403,7 @@ header {
   height: 250px;
   -webkit-transition: all ease 0.8s;
   transition: all ease 0.8s;
+  border-radius: 10px;
 }
 
 .cardImagen3:hover {
@@ -394,6 +420,7 @@ header {
   height: 250px;
   -webkit-transition: all ease 0.8s;
   transition: all ease 0.8s;
+  border-radius: 10px;
 }
 
 .cardImagen4:hover {
@@ -410,6 +437,7 @@ header {
   height: 250px;
   -webkit-transition: all ease 0.8s;
   transition: all ease 0.8s;
+  border-radius: 10px;
 }
 
 .cardImagen5:hover {
@@ -426,6 +454,7 @@ header {
   height: 250px;
   -webkit-transition: all ease 0.8s;
   transition: all ease 0.8s;
+  border-radius: 10px;
 }
 
 .cardImagen6:hover {
@@ -442,6 +471,7 @@ header {
   height: 250px;
   -webkit-transition: all ease 0.8s;
   transition: all ease 0.8s;
+  border-radius: 10px;
 }
 
 .cardImagen7:hover {
@@ -458,6 +488,7 @@ header {
   height: 250px;
   -webkit-transition: all ease 0.8s;
   transition: all ease 0.8s;
+  border-radius: 10px;
 }
 
 .cardImagen8:hover {
@@ -474,6 +505,7 @@ header {
   height: 250px;
   -webkit-transition: all ease 0.8s;
   transition: all ease 0.8s;
+  border-radius: 10px;
 }
 
 .cardImagen9:hover {
@@ -490,6 +522,7 @@ header {
   height: 250px;
   -webkit-transition: all ease 0.8s;
   transition: all ease 0.8s;
+  border-radius: 10px;
 }
 
 .cardImagen10:hover {
@@ -984,6 +1017,7 @@ h6::selection {
   outline: none;
   width: 90%;
   padding: 20px 25px;
+  color: #ffffff;
 }
 
 .contacto .contenedorForm form .formInput::-webkit-input-placeholder {
@@ -1000,6 +1034,10 @@ h6::selection {
 
 .contacto .contenedorForm form .formInput::placeholder {
   color: #ffffff;
+}
+
+.contacto .contenedorForm form .formInput::content {
+  color: white;
 }
 
 .contacto .contenedorForm form .boton {
@@ -1030,6 +1068,12 @@ h6::selection {
   background-color: #ffffff;
   color: #000;
   font-weight: bold;
+}
+
+.styleToastify {
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  border-radius: 15px;
 }
 
 .redes {

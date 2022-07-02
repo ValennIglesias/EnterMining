@@ -2,18 +2,45 @@ $carousel-control-transition: opacity .1s ease;
 
 
 /* === === === === === === === === === === FONTS === === === === === === === === === === */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 @font-face {
     font-family: poppins;
     src: url(../fonts/Poppins-Regular.ttf);
 }
 
+
+
 /* === === === === === === === === === === GENERAL === === === === === === === === === === */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #000000;
+  
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 2px;
+  }
+  
+  ::selection {
+    background-color: #B89B86;
+    color: #ffffff;
+  }
+
+
+
 
 html {
     scroll-behavior: smooth;
@@ -262,7 +289,7 @@ header {
     background-image: url("../imagenes/endless-constellation\ \(3\).svg");
     padding-top: 50px;
 
-    
+
 
 }
 
@@ -300,12 +327,12 @@ header {
     width: 25rem;
     transition: 400ms;
     cursor: pointer;
-    background: rgba( 255, 255, 255, 0.5 );
-    box-shadow: 0 8px 32px 0 rgba(52, 53, 54, 0.37);
-    backdrop-filter: blur( 9.5px );
-    -webkit-backdrop-filter: blur( 9.5px );
+    background: rgba(255, 255, 255, 0.65);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba(255, 255, 255, 0.18);
 
 }
 
@@ -316,6 +343,9 @@ header {
     background-repeat: no-repeat;
     height: 250px;
     transition: all ease 0.8s;
+    border-radius: 10px;
+
+
 
     &:hover {
         transform: scale(1.15);
@@ -330,6 +360,8 @@ header {
     background-repeat: no-repeat;
     height: 250px;
     transition: all ease 0.8s;
+    border-radius: 10px;
+
 
     &:hover {
         transform: scale(1.15);
@@ -344,6 +376,8 @@ header {
     background-repeat: no-repeat;
     height: 250px;
     transition: all ease 0.8s;
+    border-radius: 10px;
+
 
     &:hover {
         transform: scale(1.15);
@@ -358,6 +392,8 @@ header {
     background-repeat: no-repeat;
     height: 250px;
     transition: all ease 0.8s;
+    border-radius: 10px;
+
 
     &:hover {
         transform: scale(1.15);
@@ -372,6 +408,8 @@ header {
     background-repeat: no-repeat;
     height: 250px;
     transition: all ease 0.8s;
+    border-radius: 10px;
+
 
     &:hover {
         transform: scale(1.15);
@@ -386,6 +424,8 @@ header {
     background-repeat: no-repeat;
     height: 250px;
     transition: all ease 0.8s;
+    border-radius: 10px;
+
 
     &:hover {
         transform: scale(1.15);
@@ -400,6 +440,8 @@ header {
     background-repeat: no-repeat;
     height: 250px;
     transition: all ease 0.8s;
+    border-radius: 10px;
+
 
     &:hover {
         transform: scale(1.15);
@@ -414,6 +456,8 @@ header {
     background-repeat: no-repeat;
     height: 250px;
     transition: all ease 0.8s;
+    border-radius: 10px;
+
 
     &:hover {
         transform: scale(1.15);
@@ -428,6 +472,8 @@ header {
     background-repeat: no-repeat;
     height: 250px;
     transition: all ease 0.8s;
+    border-radius: 10px;
+
 
     &:hover {
         transform: scale(1.15);
@@ -442,6 +488,8 @@ header {
     background-repeat: no-repeat;
     height: 250px;
     transition: all ease 0.8s;
+    border-radius: 10px;
+
 
     &:hover {
         transform: scale(1.15);
@@ -458,6 +506,7 @@ header {
     letter-spacing: 4px;
     font-weight: bold;
     padding: 10px;
+    
 
     h4 {
         padding-top: 20px;
@@ -874,10 +923,15 @@ h6 {
                 outline: none;
                 width: 90%;
                 padding: 20px 25px;
+                color:#ffffff ;
             }
 
             .formInput::placeholder {
                 color: #ffffff;
+            }
+
+            .formInput::content{
+                color: white;
             }
 
             .boton {
@@ -910,6 +964,12 @@ h6 {
 
 }
 
+.styleToastify {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    border-radius: 15px;
+  }
+
 
 
 .redes {
@@ -939,8 +999,8 @@ h6 {
     color: #ffffff;
     padding: 30px 30px;
     transition: all 0.3s ease-in;
-  
-   
+
+
 
     &:hover {
         transform: translateY(-10px);
