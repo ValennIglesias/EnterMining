@@ -155,7 +155,7 @@ header {
 
         .logo img {
             margin-left: 0;
-        height: 100px;
+            height: 100px;
 
         }
     }
@@ -226,7 +226,7 @@ header {
                     height: auto;
                     width: 100%;
                     background-color: white;
-        height: 450px;
+                    height: 450px;
 
                 }
             }
@@ -255,19 +255,21 @@ header {
 /* === === === === === === === === === === PRODUCTOS === === === === === === === === === === */
 
 
-
-
-
-
 .containerProductos {
-    background-color: white;
+
+    background-color: #ffffff;
+    // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%23000000' fill-opacity='0.42'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("../imagenes/endless-constellation\ \(3\).svg");
+    padding-top: 50px;
+
+    
+
 }
 
 .tituloProductos {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     color: black;
     margin-bottom: 0;
-    padding: 50px 0 10px 0;
     font-family: 'poppins';
     text-align: center;
     font-size: 30px;
@@ -275,6 +277,9 @@ header {
     letter-spacing: 3px;
     font-weight: bold;
     -webkit-text-stroke: 2px;
+    backdrop-filter: blur(0.5px);
+
+
 }
 
 .cardContainer {
@@ -285,13 +290,23 @@ header {
     font-family: poppins;
     padding: 30px 15px;
     row-gap: 30px;
-    background-color: white;
+    backdrop-filter: blur(0.5px);
+
+
+
 }
 
 .cardProducto {
     width: 25rem;
     transition: 400ms;
     cursor: pointer;
+    background: rgba( 255, 255, 255, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba(52, 53, 54, 0.37);
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
 }
 
 .cardImagen {
@@ -450,8 +465,6 @@ header {
     }
 }
 
-
-
 /* From uiverse.io by @mrhyddenn */
 .button {
     -moz-appearance: none;
@@ -467,10 +480,10 @@ header {
     font-weight: bold;
     font-size: 14px;
     transition: all .15s ease;
-  }
-  
-  .button::before,
-  .button::after {
+}
+
+.button::before,
+.button::after {
     content: '';
     display: block;
     position: absolute;
@@ -479,38 +492,38 @@ header {
     height: calc(50% - 5px);
     border: 1px solid #7D8082;
     transition: all .15s ease;
-  }
-  
-  .button::before {
+}
+
+.button::before {
     top: 0;
     border-bottom-width: 0;
-  }
-  
-  .button::after {
+}
+
+.button::after {
     bottom: 0;
     border-top-width: 0;
-  }
-  
-  .button:active,
-  .button:focus {
+}
+
+.button:active,
+.button:focus {
     outline: none;
-  }
-  
-  .button:active::before,
-  .button:active::after {
+}
+
+.button:active::before,
+.button:active::after {
     right: 3px;
     left: 3px;
-  }
-  
-  .button:active::before {
+}
+
+.button:active::before {
     top: 3px;
-  }
-  
-  .button:active::after {
+}
+
+.button:active::after {
     bottom: 3px;
-  }
-  
-  .button_lg {
+}
+
+.button_lg {
     position: relative;
     display: block;
     padding: 8px 30px;
@@ -521,9 +534,9 @@ header {
     letter-spacing: 4px;
     font-size: 16px;
     font-weight: 100;
-  }
-  
-  .button_lg::before {
+}
+
+.button_lg::before {
     content: '';
     display: block;
     position: absolute;
@@ -532,9 +545,9 @@ header {
     width: 2px;
     height: 2px;
     background-color: #0f1923;
-  }
-  
-  .button_lg::after {
+}
+
+.button_lg::after {
     content: '';
     display: block;
     position: absolute;
@@ -544,9 +557,9 @@ header {
     height: 4px;
     background-color: #0f1923;
     transition: all .2s ease;
-  }
-  
-  .button_sl {
+}
+
+.button_sl {
     display: block;
     position: absolute;
     top: 0;
@@ -556,41 +569,23 @@ header {
     background-color: #740707;
     transform: skew(-15deg);
     transition: all .2s ease;
-  }
-  
-  .button_text {
+}
+
+.button_text {
     position: relative;
-  }
-  
-  .button:hover {
+}
+
+.button:hover {
     color: #0f1923;
-  }
-  
-  .button:hover .button_sl {
+}
+
+.button:hover .button_sl {
     width: calc(100% + 15px);
-  }
-  
-  .button:hover .button_lg::after {
+}
+
+.button:hover .button_lg::after {
     background-color: #fff;
-  }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 .modal-header {
     background-color: #000000;
@@ -599,16 +594,13 @@ header {
         color: white
     }
 
-    .btn-close{
+    .btn-close {
         filter: invert(1);
 
-        &:focus{
+        &:focus {
             box-shadow: none;
         }
-
     }
-
-
 }
 
 .modal-body {
@@ -767,7 +759,7 @@ td {
     background-size: cover;
     background-repeat: no-repeat;
     width: 40%;
-  
+
 }
 
 .textoNosotros {
@@ -777,7 +769,7 @@ td {
     line-height: 30px;
     font-size: 18px;
     width: 60%;
-    
+
 
     &::selection {
         background-color: #1b1b1b;
@@ -798,7 +790,7 @@ h6 {
 
 // @media only screen and (max-width: 1440px) {
 
-  
+
 
 //     .textoNosotros {
 //         width: 50%;
@@ -840,7 +832,7 @@ h6 {
     align-items: center;
     background-color: black;
     padding: 100px;
-  
+
     .tituloContacto {
         color: white;
         padding: 0;
@@ -854,8 +846,8 @@ h6 {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-    
-    
+
+
         form {
             width: 100%;
             display: flex;
@@ -863,8 +855,8 @@ h6 {
             justify-content: center;
             align-content: center;
             align-items: center;
-    
-    
+
+
             h2 {
                 font-family: poppins;
                 font-size: 22px;
@@ -872,10 +864,10 @@ h6 {
                 display: flex;
                 justify-content: center;
             }
-    
+
             .formInput {
                 font-family: poppins;
-                font-size: 20px;
+                font-size: 18px;
                 background-color: transparent;
                 border: none;
                 border-bottom: 2.5px solid #ffffff;
@@ -883,17 +875,17 @@ h6 {
                 width: 90%;
                 padding: 20px 25px;
             }
-    
+
             .formInput::placeholder {
                 color: #ffffff;
             }
-    
+
             .boton {
                 display: flex;
                 justify-content: center;
                 padding: 20px;
-    
-    
+
+
                 .inputBoton {
                     padding: 10px 50px;
                     border: 2px solid #ffffff;
@@ -905,10 +897,11 @@ h6 {
                     color: #ffffff;
                     cursor: pointer;
                     transition: all ease 0.8s;
-    
+
                     &:hover {
                         background-color: #ffffff;
                         color: #000;
+                        font-weight: bold;
                     }
                 }
             }
@@ -923,15 +916,13 @@ h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    align-content: center;
+    align-content: space-between;
+    justify-content: space-evenly;
     margin-top: 20px;
-    border: 2px solid rgb(255, 255, 255);
     border-radius: 20px;
     width: 100% !important;
     padding: 50px 0;
-    box-shadow: 2px 2px 10px rgb(78, 78, 78);
-    
+
 
 
     p {
@@ -946,8 +937,10 @@ h6 {
 
 .icon {
     color: #ffffff;
-    padding: 10px;
+    padding: 30px 30px;
     transition: all 0.3s ease-in;
+  
+   
 
     &:hover {
         transform: translateY(-10px);
@@ -968,8 +961,6 @@ h6 {
     .redes {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
         width: 50%;
     }
 
