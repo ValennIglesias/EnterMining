@@ -29,10 +29,11 @@ body {
 h3 {
     font-family: 'poppins';
     text-align: center;
-    font-size: 27px;
+    font-size: 30px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     font-weight: bold;
+    -webkit-text-stroke: 1px;
 }
 
 /* === === === === === === === === === === HEADER === === === === === === === === === === */
@@ -44,15 +45,14 @@ header {
     width: 100%;
 }
 
-.containerHeader {
-    background-color: rgb(8, 8, 8);
-}
+
 
 .header {
     height: min-content;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #000000;
 
     .logo img {
         height: 160px;
@@ -65,7 +65,7 @@ header {
         justify-content: space-between;
         column-gap: 45px;
         margin: 0;
-        height: 110px;
+        height: 120px;
 
         a {
             text-decoration: none;
@@ -81,9 +81,7 @@ header {
     border: none;
 }
 
-.navbar {
-    background-color: black;
-}
+
 
 .navbar-light .navbar-nav .nav-link {
     color: white;
@@ -145,7 +143,10 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
+
+
     .navbar-light .navbar-nav .nav-link {
+        padding: 2%;
         font-size: 20px;
     }
 
@@ -154,6 +155,8 @@ header {
 
         .logo img {
             margin-left: 0;
+        height: 100px;
+
         }
     }
 }
@@ -175,7 +178,7 @@ header {
     background-color: rgb(8, 8, 8);
     border-radius: 50%;
     color: white;
-    padding: 10px;
+    padding: 12px;
     animation: flotar 1.5s linear;
     animation-iteration-count: 2;
     animation-delay: 5s;
@@ -223,6 +226,8 @@ header {
                     height: auto;
                     width: 100%;
                     background-color: white;
+        height: 450px;
+
                 }
             }
         }
@@ -249,6 +254,11 @@ header {
 
 /* === === === === === === === === === === PRODUCTOS === === === === === === === === === === */
 
+
+
+
+
+
 .containerProductos {
     background-color: white;
 }
@@ -258,6 +268,13 @@ header {
     color: black;
     margin-bottom: 0;
     padding: 50px 0 10px 0;
+    font-family: 'poppins';
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    -webkit-text-stroke: 2px;
 }
 
 .cardContainer {
@@ -431,103 +448,149 @@ header {
         padding-top: 20px;
         color: black;
     }
-
-    .cardButton {
-        padding: 10px 40px;
-        border: none;
-        outline: none;
-        color: #FFF;
-        font-family: inherit;
-        font-weight: 500;
-        font-size: 17px;
-        cursor: pointer;
-        position: relative;
-        z-index: 0;
-        border-radius: 12px;
-        letter-spacing: 2px;
-    }
-
-    .cardButton::after {
-        content: "";
-        z-index: -1;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(0, 0, 0);
-        left: 0;
-        top: 0;
-        border-radius: 10px;
-    }
-
-    /* glow */
-
-    .cardButton::before {
-        content: "";
-        background: linear-gradient(45deg,
-                #818181, #818181, #818181, #818181,
-                #000000, #000000, #000000, #000000);
-        position: absolute;
-        top: -2px;
-        left: -2px;
-        background-size: 600%;
-        z-index: -1;
-        width: calc(100% + 4px);
-        height: calc(100% + 4px);
-        filter: blur(8px);
-        animation: glowing 20s linear infinite;
-        transition: opacity .3s ease-in-out;
-        border-radius: 10px;
-        opacity: 0;
-    }
-
-    @keyframes glowing {
-        0% {
-            background-position: 0 0;
-        }
-
-        50% {
-            background-position: 400% 0;
-        }
-
-        100% {
-            background-position: 0 0;
-        }
-    }
-
-    /* hover */
-
-    .cardButton:hover::before {
-        opacity: 1;
-    }
-
-    .cardButton:active:after {
-        background: transparent;
-    }
-
-    .cardButton:active {
-        color: #000;
-        font-weight: bold;
-    }
-
-    &:hover {
-        color: white;
-        letter-spacing: 5px;
-    }
 }
 
-// .cardFooter button {
 
-//     font-family: poppins;
-//     padding: 10px 40px;
-//     color: #000;
-//     background-color: transparent;
-//     border: 1px solid black;
-//     border-radius: 5px;
-//     letter-spacing: 3px;
-//     font-weight: bold;
-//     cursor: pointer;
-//     transition: all ease-in 0.3s;
-// }
+
+/* From uiverse.io by @mrhyddenn */
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    color: #0f1923;
+    cursor: pointer;
+    position: relative;
+    padding: 8px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all .15s ease;
+  }
+  
+  .button::before,
+  .button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid #7D8082;
+    transition: all .15s ease;
+  }
+  
+  .button::before {
+    top: 0;
+    border-bottom-width: 0;
+  }
+  
+  .button::after {
+    bottom: 0;
+    border-top-width: 0;
+  }
+  
+  .button:active,
+  .button:focus {
+    outline: none;
+  }
+  
+  .button:active::before,
+  .button:active::after {
+    right: 3px;
+    left: 3px;
+  }
+  
+  .button:active::before {
+    top: 3px;
+  }
+  
+  .button:active::after {
+    bottom: 3px;
+  }
+  
+  .button_lg {
+    position: relative;
+    display: block;
+    padding: 8px 30px;
+    color: #fff;
+    background-color: #000000;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+    letter-spacing: 4px;
+    font-size: 16px;
+    font-weight: 100;
+  }
+  
+  .button_lg::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: #0f1923;
+  }
+  
+  .button_lg::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #0f1923;
+    transition: all .2s ease;
+  }
+  
+  .button_sl {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: -8px;
+    width: 0;
+    background-color: #740707;
+    transform: skew(-15deg);
+    transition: all .2s ease;
+  }
+  
+  .button_text {
+    position: relative;
+  }
+  
+  .button:hover {
+    color: #0f1923;
+  }
+  
+  .button:hover .button_sl {
+    width: calc(100% + 15px);
+  }
+  
+  .button:hover .button_lg::after {
+    background-color: #fff;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .modal-header {
     background-color: #000000;
@@ -535,6 +598,17 @@ header {
     h5 {
         color: white
     }
+
+    .btn-close{
+        filter: invert(1);
+
+        &:focus{
+            box-shadow: none;
+        }
+
+    }
+
+
 }
 
 .modal-body {
@@ -679,29 +753,31 @@ td {
 }
 
 .containerNosotros {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    padding: 0px 50px;
 }
 
 .imagenNosotros {
-    background-image: url(../imagenes/DSC01516.jpg);
+    background-image: url(../imagenes/nosotros.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 500px;
-    width: 45%;
+    width: 40%;
+  
 }
 
 .textoNosotros {
-    width: 50%;
     color: white;
-    padding: 0 20px;
+    padding: 0 40px;
     text-align: justify;
-    line-height: 40px;
+    line-height: 30px;
     font-size: 18px;
+    width: 60%;
+    
 
     &::selection {
         background-color: #1b1b1b;
@@ -720,27 +796,20 @@ h6 {
     }
 }
 
-@media only screen and (max-width: 1440px) {
+// @media only screen and (max-width: 1440px) {
 
-    .imagenNosotros {
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 400px;
-        width: 40%;
+  
 
-    }
+//     .textoNosotros {
+//         width: 50%;
+//         color: white;
+//         padding: 0 20px;
+//         text-align: justify;
+//         font-family: poppins;
+//         line-height: 30px;
 
-    .textoNosotros {
-        width: 50%;
-        color: white;
-        padding: 0 20px;
-        text-align: justify;
-        font-family: poppins;
-        line-height: 30px;
-
-    }
-}
+//     }
+// }
 
 @media only screen and (max-width: 768px) {
 
@@ -762,96 +831,107 @@ h6 {
 // <!-- === === === === === CONTACTO === === === === === --> //
 
 
-.tituloContacto {
-    background-color: black;
-    color: white;
-    padding: 0;
-    margin: 0;
-    padding: 0 0 10px 0;
-}
+
 
 .contacto {
     display: flex;
-    justify-content: center;
-    background-color: black;
-    padding-bottom: 100px;
-
-}
-
-.contenedorForm {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 100px;
+  
+    .tituloContacto {
+        color: white;
+        padding: 0;
+        margin: 0;
+        padding: 0 0 10px 0;
+    }
 
-
-    form {
-        width: 100%;
+    .contenedorForm {
+        width: 70%;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
         align-items: center;
-
-
-        h2 {
-            font-family: poppins;
-            font-size: 22px;
-            letter-spacing: 3px;
+        justify-content: center;
+        flex-direction: column;
+    
+    
+        form {
+            width: 100%;
             display: flex;
+            flex-direction: column;
             justify-content: center;
-        }
-
-        .formInput {
-            font-family: poppins;
-            font-size: 20px;
-            background-color: transparent;
-            border: none;
-            border-bottom: 2.5px solid #ffffff;
-            outline: none;
-            width: 90%;
-            padding: 30px 25px;
-        }
-
-        .formInput::placeholder {
-            color: #ffffff;
-        }
-
-        .boton {
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-
-
-            .inputBoton {
-                padding: 10px 50px;
-                border: 2px solid #ffffff;
-                border-radius: 5px;
-                font-size: 16px;
+            align-content: center;
+            align-items: center;
+    
+    
+            h2 {
                 font-family: poppins;
-                background-color: transparent;
+                font-size: 22px;
                 letter-spacing: 3px;
+                display: flex;
+                justify-content: center;
+            }
+    
+            .formInput {
+                font-family: poppins;
+                font-size: 20px;
+                background-color: transparent;
+                border: none;
+                border-bottom: 2.5px solid #ffffff;
+                outline: none;
+                width: 90%;
+                padding: 20px 25px;
+            }
+    
+            .formInput::placeholder {
                 color: #ffffff;
-                cursor: pointer;
-                transition: all ease 0.8s;
-
-                &:hover {
-                    background-color: #ffffff;
-                    color: #000;
+            }
+    
+            .boton {
+                display: flex;
+                justify-content: center;
+                padding: 20px;
+    
+    
+                .inputBoton {
+                    padding: 10px 50px;
+                    border: 2px solid #ffffff;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    font-family: poppins;
+                    background-color: transparent;
+                    letter-spacing: 3px;
+                    color: #ffffff;
+                    cursor: pointer;
+                    transition: all ease 0.8s;
+    
+                    &:hover {
+                        background-color: #ffffff;
+                        color: #000;
+                    }
                 }
             }
         }
     }
+
 }
+
+
 
 .redes {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    padding-top: 50px;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 100% !important;
+    padding: 50px 0;
+    box-shadow: 2px 2px 10px rgb(78, 78, 78);
+    
 
 
     p {
@@ -870,8 +950,8 @@ h6 {
     transition: all 0.3s ease-in;
 
     &:hover {
-        color: rgb(94, 95, 95);
         transform: translateY(-10px);
+        text-shadow: 2px 2px 5px rgb(153, 149, 149);
 
     }
 }
@@ -977,7 +1057,7 @@ h6 {
 .accordion-button {
     &:not(.collapsed) {
         &::after {
-            background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23F4D44B'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+            background-image: url("../imagenes/icons8-doble-abajo-50.png");
         }
     }
 }
@@ -994,7 +1074,8 @@ h6 {
 
 .accordion-button {
     &::after {
-        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23F4D44B'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+        background-image: url("../imagenes/icons8-doble-abajo-50.png");
+        filter: invert(1);
     }
 }
 
@@ -1084,12 +1165,13 @@ footer {
 
     .iconosFooter {
         width: 60px;
-        height: 40px;
+        height: 50px;
         background-color: #ffffff;
         border-radius: 5px;
         padding: 2px;
 
     }
+
 }
 
 .logoFooter {
