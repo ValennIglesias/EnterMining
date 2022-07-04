@@ -22,22 +22,22 @@ $carousel-control-transition: opacity .1s ease;
 
 ::-webkit-scrollbar {
     width: 15px;
-  }
-  
-  ::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-track {
     background-color: #000000;
-  
-  }
-  
-  ::-webkit-scrollbar-thumb {
+
+}
+
+::-webkit-scrollbar-thumb {
     background-color: #ffffff;
     border-radius: 2px;
-  }
-  
-  ::selection {
+}
+
+::selection {
     background-color: #B89B86;
     color: #ffffff;
-  }
+}
 
 
 
@@ -200,7 +200,7 @@ header {
 .botonWhapp {
     position: fixed;
     right: 2rem;
-    bottom: 2rem;
+    bottom: 12.5rem;
     z-index: 200;
     background-color: rgb(8, 8, 8);
     border-radius: 50%;
@@ -506,7 +506,7 @@ header {
     letter-spacing: 4px;
     font-weight: bold;
     padding: 10px;
-    
+
 
     h4 {
         padding-top: 20px;
@@ -890,7 +890,7 @@ h6 {
     }
 
     .contenedorForm {
-        width: 70%;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -923,14 +923,14 @@ h6 {
                 outline: none;
                 width: 90%;
                 padding: 20px 25px;
-                color:#ffffff ;
+                color: #ffffff;
             }
 
             .formInput::placeholder {
                 color: #ffffff;
             }
 
-            .formInput::content{
+            .formInput::content {
                 color: white;
             }
 
@@ -968,7 +968,7 @@ h6 {
     font-size: 14px;
     letter-spacing: 1.5px;
     border-radius: 15px;
-  }
+}
 
 
 
@@ -1038,6 +1038,12 @@ h6 {
 }
 
 @media only screen and (max-width: 768px) {
+
+
+    .contacto {
+        padding: 20px;
+    }
+
     .contenedorForm {
         display: flex;
         flex-direction: column;
@@ -1045,6 +1051,8 @@ h6 {
 
     .contenedorForm form {
         width: 100%;
+        padding: 0;
+        background-color: #F4D44B;
     }
 
     .redes {
@@ -1138,6 +1146,8 @@ footer {
     flex-flow: row wrap;
     justify-content: center;
     border-top: 2px solid rgb(255, 255, 255);
+    font-size: 20px;
+
 
     .footer {
         display: flex;
@@ -1149,11 +1159,12 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 25%;
+        align-items: center;
+        width: 30%;
 
         .mediosdePago {
-            font-size: 24px;
             color: #fff;
+            padding-top: 10px;
         }
     }
 
@@ -1163,14 +1174,18 @@ footer {
         padding: 15px 0;
         width: 100%;
         justify-content: space-between;
+        row-gap: 20px;
+        column-gap: 5px;
 
     }
 
     p {
-        color: white;
         text-align: center;
+        color: white;
+    }
 
-
+    .copyright{
+        font-size: 15px;
     }
 
     .footerMedio {
@@ -1179,19 +1194,17 @@ footer {
         align-items: center;
         justify-content: center;
         width: 25%;
-
     }
 
     .footerDerecha {
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
         width: 25%;
 
-
         .encontranos {
             color: white;
-            font-size: 24px;
         }
 
         .direccion {
@@ -1199,64 +1212,67 @@ footer {
             color: #ffffff;
 
             &:hover {
-                // color: #F4D44B;
                 transition: 400ms;
             }
         }
-
 
         .iconosRedes {
             display: flex;
             width: 100%;
             justify-content: space-around;
+            row-gap: 20px;
+            column-gap: 5px;
+          
         }
     }
-
-
 
     .iconosFooter {
         width: 60px;
         height: 50px;
         background-color: #ffffff;
         border-radius: 5px;
-        padding: 2px;
-
+        padding: 5px;
     }
-
 }
 
 .logoFooter {
 
-    height: 200px;
+    height: 150px;
     width: auto;
-
 }
 
 canvas {
     position: absolute;
     background-size: contain;
     z-index: -1;
-    height: 300px !important;
+    height: 200px !important;
     object-fit: none;
 }
 
-// @media only screen and (max-width: 825px){
-
-//     .iconosPagos {
-//         background-color: aqua;
-//     }
-
-
-
-// }
 
 
 @media only screen and (max-width: 768px) {
     footer .footerDerecha .encontranos {
-        color: #F4D44B;
-        font-size: 20px;
+        font-size: 18px;
     }
 
+    footer .footerIzquierda {
+
+        .mediosdePago {
+            font-size: 18px;
+            color: #fff;
+        }
+
+        .iconosPagos {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 15px 0;
+            width: 100%;
+            justify-content: space-between;
+
+        }
+
+    }
 }
 
 @media only screen and (max-width: 425px) {
@@ -1264,19 +1280,12 @@ canvas {
     footer .iconosFooter {
         width: 40px;
         height: 25px;
-        background-color: #F4D44B;
         border-radius: 5px;
-        padding: 2px;
-
-
     }
 
     .logoFooter {
 
         height: 100px;
         width: auto;
-
     }
-
-
 }

@@ -211,7 +211,7 @@ header {
 .botonWhapp {
   position: fixed;
   right: 2rem;
-  bottom: 2rem;
+  bottom: 12.5rem;
   z-index: 200;
   background-color: #080808;
   border-radius: 50%;
@@ -961,7 +961,7 @@ h6::selection {
 }
 
 .contacto .contenedorForm {
-  width: 70%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1148,6 +1148,9 @@ h6::selection {
 }
 
 @media only screen and (max-width: 768px) {
+  .contacto {
+    padding: 20px;
+  }
   .contenedorForm {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1159,6 +1162,8 @@ h6::selection {
   }
   .contenedorForm form {
     width: 100%;
+    padding: 0;
+    background-color: #F4D44B;
   }
   .redes {
     display: -webkit-box;
@@ -1258,6 +1263,7 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   border-top: 2px solid white;
+  font-size: 20px;
 }
 
 footer .footer {
@@ -1280,12 +1286,15 @@ footer .footerIzquierda {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 25%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
 }
 
 footer .footerIzquierda .mediosdePago {
-  font-size: 24px;
   color: #fff;
+  padding-top: 10px;
 }
 
 footer .iconosPagos {
@@ -1299,11 +1308,18 @@ footer .iconosPagos {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  row-gap: 20px;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
 }
 
 footer p {
-  color: white;
   text-align: center;
+  color: white;
+}
+
+footer .copyright {
+  font-size: 15px;
 }
 
 footer .footerMedio {
@@ -1331,6 +1347,9 @@ footer .footerDerecha {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1339,7 +1358,6 @@ footer .footerDerecha {
 
 footer .footerDerecha .encontranos {
   color: white;
-  font-size: 24px;
 }
 
 footer .footerDerecha .direccion {
@@ -1359,6 +1377,9 @@ footer .footerDerecha .iconosRedes {
   width: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  row-gap: 20px;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
 }
 
 footer .iconosFooter {
@@ -1366,11 +1387,11 @@ footer .iconosFooter {
   height: 50px;
   background-color: #ffffff;
   border-radius: 5px;
-  padding: 2px;
+  padding: 5px;
 }
 
 .logoFooter {
-  height: 200px;
+  height: 150px;
   width: auto;
 }
 
@@ -1378,15 +1399,30 @@ canvas {
   position: absolute;
   background-size: contain;
   z-index: -1;
-  height: 300px !important;
+  height: 200px !important;
   -o-object-fit: none;
      object-fit: none;
 }
 
 @media only screen and (max-width: 768px) {
   footer .footerDerecha .encontranos {
-    color: #F4D44B;
-    font-size: 20px;
+    font-size: 18px;
+  }
+  footer .footerIzquierda .mediosdePago {
+    font-size: 18px;
+    color: #fff;
+  }
+  footer .footerIzquierda .iconosPagos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 15px 0;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -1394,9 +1430,7 @@ canvas {
   footer .iconosFooter {
     width: 40px;
     height: 25px;
-    background-color: #F4D44B;
     border-radius: 5px;
-    padding: 2px;
   }
   .logoFooter {
     height: 100px;
