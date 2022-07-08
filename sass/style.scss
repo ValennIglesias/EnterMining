@@ -3,16 +3,12 @@ $carousel-control-transition: opacity .1s ease;
 
 /* === === === === === === === === === === FONTS === === === === === === === === === === */
 
-
 @font-face {
     font-family: poppins;
     src: url(../fonts/Poppins-Regular.ttf);
 }
 
-
-
 /* === === === === === === === === === === GENERAL === === === === === === === === === === */
-
 
 * {
     margin: 0;
@@ -38,9 +34,6 @@ $carousel-control-transition: opacity .1s ease;
     background-color: #B89B86;
     color: #ffffff;
 }
-
-
-
 
 html {
     scroll-behavior: smooth;
@@ -70,34 +63,34 @@ header {
     position: sticky;
     top: 0px;
     width: 100%;
-}
 
-
-
-.header {
-    height: min-content;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #000000;
-
-    .logo img {
-        height: 160px;
-        margin-left: 2rem;
-    }
-
-    .menu {
+    .header {
+        height: min-content;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        column-gap: 45px;
-        margin: 0;
-        height: 120px;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #000000;
 
-        a {
-            text-decoration: none;
-            transition: all ease 0.3s;
-            color: white;
+        .logo img {
+            height: 160px;
+            margin-left: 2rem;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            column-gap: 45px;
+            margin: 0;
+            height: 120px;
+
+            a {
+                text-decoration: none;
+                transition: all ease 0.3s;
+                color: white;
+            }
+
+        
         }
     }
 }
@@ -107,8 +100,6 @@ header {
     border-color: rgba(0, 0, 0, .1);
     border: none;
 }
-
-
 
 .navbar-light .navbar-nav .nav-link {
     color: white;
@@ -146,10 +137,20 @@ header {
     align-items: flex-end;
 }
 
+
+/* === === MEDIA QUERIES HEADER === ===  */
+
 @media only screen and (max-width: 1024px) {
-    .logo img {
-        height: 140px;
+
+    header{
+        .header{
+
+            .logo img {
+                height: 110px;
+            }
+        }
     }
+ 
 }
 
 @media only screen and (max-width: 992px) {
@@ -165,27 +166,33 @@ header {
 
     .navbar-light .navbar-nav .nav-link {
         margin: 0;
-        padding: 0.3rem 0;
+        padding: 2%;
+
     }
 }
 
 @media only screen and (max-width: 768px) {
 
+    header{
 
-    .navbar-light .navbar-nav .nav-link {
-        padding: 2%;
-        font-size: 20px;
-    }
-
-    .header {
-        width: 100%;
-
-        .logo img {
-            margin-left: 0;
-            height: 100px;
-
+        .navbar-light .navbar-nav .nav-link {
+            padding: 2%;
+            font-size: 20px;
         }
+    
+        .header {
+            width: 100%;
+    
+            .logo img {
+                margin-left: 0;
+                height: 100px;
+    
+            }
+        }
+
     }
+
+   
 }
 
 @media only screen and (max-width: 425px) {
@@ -260,17 +267,7 @@ header {
         }
     }
 }
-
-// .imagenInicio {
-//     background-image: url(../imagenes/farm-2852024_960_720.webp);
-//     background-size: cover;
-//     background-position: center;
-//     height: 520px;
-//     width: 100%;
-//     background-color: white;
-// }
-
-
+/* === === MEDIA QUERIES INICIO === === */
 
 @media only screen and (max-width: 425px) {
 
@@ -283,14 +280,9 @@ header {
 
 
 .containerProductos {
-
     background-color: #ffffff;
-    // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%23000000' fill-opacity='0.42'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
     background-image: url("../imagenes/endless-constellation\ \(3\).svg");
     padding-top: 50px;
-
-
-
 }
 
 .tituloProductos {
@@ -305,8 +297,6 @@ header {
     font-weight: bold;
     -webkit-text-stroke: 2px;
     backdrop-filter: blur(0.5px);
-
-
 }
 
 .cardContainer {
@@ -318,9 +308,6 @@ header {
     padding: 30px 15px;
     row-gap: 30px;
     backdrop-filter: blur(0.5px);
-
-
-
 }
 
 .cardProducto {
@@ -333,7 +320,6 @@ header {
     -webkit-backdrop-filter: blur(12px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-
 }
 
 .cardImagen {
@@ -344,8 +330,6 @@ header {
     height: 250px;
     transition: all ease 0.8s;
     border-radius: 10px;
-
-
 
     &:hover {
         transform: scale(1.15);
@@ -362,7 +346,6 @@ header {
     transition: all ease 0.8s;
     border-radius: 10px;
 
-
     &:hover {
         transform: scale(1.15);
         border: none;
@@ -377,7 +360,6 @@ header {
     height: 250px;
     transition: all ease 0.8s;
     border-radius: 10px;
-
 
     &:hover {
         transform: scale(1.15);
@@ -394,7 +376,6 @@ header {
     transition: all ease 0.8s;
     border-radius: 10px;
 
-
     &:hover {
         transform: scale(1.15);
         border: none;
@@ -409,7 +390,6 @@ header {
     height: 250px;
     transition: all ease 0.8s;
     border-radius: 10px;
-
 
     &:hover {
         transform: scale(1.15);
@@ -426,7 +406,6 @@ header {
     transition: all ease 0.8s;
     border-radius: 10px;
 
-
     &:hover {
         transform: scale(1.15);
         border: none;
@@ -441,7 +420,6 @@ header {
     height: 250px;
     transition: all ease 0.8s;
     border-radius: 10px;
-
 
     &:hover {
         transform: scale(1.15);
@@ -458,7 +436,6 @@ header {
     transition: all ease 0.8s;
     border-radius: 10px;
 
-
     &:hover {
         transform: scale(1.15);
         border: none;
@@ -474,7 +451,6 @@ header {
     transition: all ease 0.8s;
     border-radius: 10px;
 
-
     &:hover {
         transform: scale(1.15);
         border: none;
@@ -489,7 +465,6 @@ header {
     height: 250px;
     transition: all ease 0.8s;
     border-radius: 10px;
-
 
     &:hover {
         transform: scale(1.15);
@@ -507,7 +482,6 @@ header {
     font-weight: bold;
     padding: 10px;
 
-
     h4 {
         padding-top: 20px;
         color: black;
@@ -515,6 +489,7 @@ header {
 }
 
 /* From uiverse.io by @mrhyddenn */
+
 .button {
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -791,66 +766,47 @@ td {
     justify-content: center;
     background-color: black;
     padding-top: 45px;
-}
+    .containerNosotros {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        padding: 0px 50px;
+        .imagenNosotros {
+            background-image: url(../imagenes/nosotros.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 40%;
+        }
 
-.containerNosotros {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 50px;
-    padding: 0px 50px;
-}
+        .textoNosotros {
+            color: white;
+            padding: 0 40px;
+            text-align: justify;
+            line-height: 30px;
+            font-size: 18px;
+            width: 60%;
 
-.imagenNosotros {
-    background-image: url(../imagenes/nosotros.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 40%;
+            &::selection {
+                background-color: #1b1b1b;
+            }
 
-}
-
-.textoNosotros {
-    color: white;
-    padding: 0 40px;
-    text-align: justify;
-    line-height: 30px;
-    font-size: 18px;
-    width: 60%;
-
-
-    &::selection {
-        background-color: #1b1b1b;
-    }
-
-}
-
-h6 {
-    font-size: 25px;
-    text-align: center;
-    color: white;
-    letter-spacing: 3px;
-
-    &::selection {
-        background-color: #1b1b1b;
+            h6 {
+                font-size: 25px;
+                text-align: center;
+                color: white;
+                letter-spacing: 3px;
+            
+                &::selection {
+                    background-color: #1b1b1b;
+                }
+            }
+        }
     }
 }
-
-// @media only screen and (max-width: 1440px) {
-
-
-
-//     .textoNosotros {
-//         width: 50%;
-//         color: white;
-//         padding: 0 20px;
-//         text-align: justify;
-//         font-family: poppins;
-//         line-height: 30px;
-
-//     }
-// }
+/* === === MEDIA QUERIES NOSOTROS === === */
 
 @media only screen and (max-width: 768px) {
 
@@ -868,11 +824,7 @@ h6 {
     }
 }
 
-
 // <!-- === === === === === CONTACTO === === === === === --> //
-
-
-
 
 .contacto {
     display: flex;
@@ -880,13 +832,13 @@ h6 {
     justify-content: center;
     align-items: center;
     background-color: black;
-    padding: 100px;
+    padding: 80px 0;
 
     .tituloContacto {
         color: white;
         padding: 0;
         margin: 0;
-        padding: 0 0 10px 0;
+        padding: 0 0 30px 0;
     }
 
     .contenedorForm {
@@ -896,7 +848,6 @@ h6 {
         justify-content: center;
         flex-direction: column;
 
-
         form {
             width: 100%;
             display: flex;
@@ -904,7 +855,6 @@ h6 {
             justify-content: center;
             align-content: center;
             align-items: center;
-
 
             h2 {
                 font-family: poppins;
@@ -922,7 +872,7 @@ h6 {
                 border-bottom: 2.5px solid #ffffff;
                 outline: none;
                 width: 90%;
-                padding: 20px 25px;
+                padding: 25px 25px;
                 color: #ffffff;
             }
 
@@ -938,7 +888,6 @@ h6 {
                 display: flex;
                 justify-content: center;
                 padding: 20px;
-
 
                 .inputBoton {
                     padding: 10px 50px;
@@ -961,7 +910,6 @@ h6 {
             }
         }
     }
-
 }
 
 .styleToastify {
@@ -969,8 +917,6 @@ h6 {
     letter-spacing: 1.5px;
     border-radius: 15px;
 }
-
-
 
 .redes {
     display: flex;
@@ -981,9 +927,7 @@ h6 {
     margin-top: 20px;
     border-radius: 20px;
     width: 100% !important;
-    padding: 50px 0;
-
-
+    // padding: 50px 0;
 
     p {
         font-size: 50px;
@@ -1000,12 +944,9 @@ h6 {
     padding: 30px 30px;
     transition: all 0.3s ease-in;
 
-
-
     &:hover {
         transform: translateY(-10px);
         text-shadow: 2px 2px 5px rgb(153, 149, 149);
-
     }
 }
 
@@ -1015,6 +956,7 @@ h6 {
     width: auto;
 }
 
+/* === === MEDIA QUERIES CONTACTO === === */
 
 @media only screen and (max-width: 1366px) {
 
@@ -1034,11 +976,9 @@ h6 {
     .fa-5x {
         font-size: 4em !important;
     }
-
 }
 
 @media only screen and (max-width: 768px) {
-
 
     .contacto {
         padding: 20px;
@@ -1070,7 +1010,6 @@ h6 {
     }
 }
 
-
 // <!-- === === === === === FAQ === === === === === --> //
 
 .tituloFaq {
@@ -1078,7 +1017,7 @@ h6 {
     color: white;
     padding: 0;
     margin: 0;
-    padding: 50px 0 60px 0;
+    padding: 0px 0 60px 0;
 }
 
 .faq {
@@ -1120,7 +1059,6 @@ h6 {
         }
     }
 }
-
 
 .accordion-collapse {
     color: #ffffff;
@@ -1184,7 +1122,7 @@ footer {
         color: white;
     }
 
-    .copyright{
+    .copyright {
         font-size: 15px;
     }
 
@@ -1222,7 +1160,7 @@ footer {
             justify-content: space-around;
             row-gap: 20px;
             column-gap: 5px;
-          
+
         }
     }
 
@@ -1249,7 +1187,7 @@ canvas {
     object-fit: none;
 }
 
-
+/* === === MEDIA QUERIES FOOTER === === */
 
 @media only screen and (max-width: 768px) {
     footer .footerDerecha .encontranos {
@@ -1269,9 +1207,7 @@ canvas {
             padding: 15px 0;
             width: 100%;
             justify-content: space-between;
-
         }
-
     }
 }
 

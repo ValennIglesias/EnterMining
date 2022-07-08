@@ -65,7 +65,7 @@ header {
   width: 100%;
 }
 
-.header {
+header .header {
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
@@ -80,12 +80,12 @@ header {
   background-color: #000000;
 }
 
-.header .logo img {
+header .header .logo img {
   height: 160px;
   margin-left: 2rem;
 }
 
-.header .menu {
+header .header .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,7 +102,7 @@ header {
   height: 120px;
 }
 
-.header .menu a {
+header .header .menu a {
   text-decoration: none;
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
@@ -163,9 +163,10 @@ header {
           align-items: flex-end;
 }
 
+/* === === MEDIA QUERIES HEADER === ===  */
 @media only screen and (max-width: 1024px) {
-  .logo img {
-    height: 140px;
+  header .header .logo img {
+    height: 110px;
   }
 }
 
@@ -181,19 +182,19 @@ header {
   }
   .navbar-light .navbar-nav .nav-link {
     margin: 0;
-    padding: 0.3rem 0;
+    padding: 2%;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .navbar-light .navbar-nav .nav-link {
+  header .navbar-light .navbar-nav .nav-link {
     padding: 2%;
     font-size: 20px;
   }
-  .header {
+  header .header {
     width: 100%;
   }
-  .header .logo img {
+  header .header .logo img {
     margin-left: 0;
     height: 100px;
   }
@@ -301,6 +302,7 @@ header {
   height: 450px;
 }
 
+/* === === MEDIA QUERIES INICIO === === */
 @media only screen and (max-width: 425px) {
   .imagenInicio {
     width: 400px;
@@ -861,7 +863,7 @@ td {
   padding-top: 45px;
 }
 
-.containerNosotros {
+.nosotros .containerNosotros {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -877,7 +879,7 @@ td {
   padding: 0px 50px;
 }
 
-.imagenNosotros {
+.nosotros .containerNosotros .imagenNosotros {
   background-image: url(../imagenes/nosotros.jpg);
   background-position: center;
   background-size: cover;
@@ -885,7 +887,7 @@ td {
   width: 40%;
 }
 
-.textoNosotros {
+.nosotros .containerNosotros .textoNosotros {
   color: white;
   padding: 0 40px;
   text-align: justify;
@@ -894,29 +896,30 @@ td {
   width: 60%;
 }
 
-.textoNosotros::-moz-selection {
+.nosotros .containerNosotros .textoNosotros::-moz-selection {
   background-color: #1b1b1b;
 }
 
-.textoNosotros::selection {
+.nosotros .containerNosotros .textoNosotros::selection {
   background-color: #1b1b1b;
 }
 
-h6 {
+.nosotros .containerNosotros .textoNosotros h6 {
   font-size: 25px;
   text-align: center;
   color: white;
   letter-spacing: 3px;
 }
 
-h6::-moz-selection {
+.nosotros .containerNosotros .textoNosotros h6::-moz-selection {
   background-color: #1b1b1b;
 }
 
-h6::selection {
+.nosotros .containerNosotros .textoNosotros h6::selection {
   background-color: #1b1b1b;
 }
 
+/* === === MEDIA QUERIES NOSOTROS === === */
 @media only screen and (max-width: 768px) {
   .containerNosotros {
     display: -webkit-box;
@@ -950,14 +953,14 @@ h6::selection {
       -ms-flex-align: center;
           align-items: center;
   background-color: black;
-  padding: 100px;
+  padding: 80px 0;
 }
 
 .contacto .tituloContacto {
   color: white;
   padding: 0;
   margin: 0;
-  padding: 0 0 10px 0;
+  padding: 0 0 30px 0;
 }
 
 .contacto .contenedorForm {
@@ -1016,7 +1019,7 @@ h6::selection {
   border-bottom: 2.5px solid #ffffff;
   outline: none;
   width: 90%;
-  padding: 20px 25px;
+  padding: 25px 25px;
   color: #ffffff;
 }
 
@@ -1095,7 +1098,6 @@ h6::selection {
   margin-top: 20px;
   border-radius: 20px;
   width: 100% !important;
-  padding: 50px 0;
 }
 
 .redes p {
@@ -1125,6 +1127,7 @@ h6::selection {
   width: auto;
 }
 
+/* === === MEDIA QUERIES CONTACTO === === */
 @media only screen and (max-width: 1366px) {
   .redes {
     display: -webkit-box;
@@ -1193,7 +1196,7 @@ h6::selection {
   color: white;
   padding: 0;
   margin: 0;
-  padding: 50px 0 60px 0;
+  padding: 0px 0 60px 0;
 }
 
 .faq {
@@ -1404,6 +1407,7 @@ canvas {
      object-fit: none;
 }
 
+/* === === MEDIA QUERIES FOOTER === === */
 @media only screen and (max-width: 768px) {
   footer .footerDerecha .encontranos {
     font-size: 18px;
