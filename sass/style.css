@@ -112,6 +112,7 @@ header .header .menu {
           column-gap: 45px;
   margin: 0;
   height: 100px;
+  padding: 0;
 }
 
 header .header .menu a {
@@ -333,14 +334,14 @@ header .header .menu a {
 @media only screen and (max-width: 600px) {
   .contenedorMain .carousel .carousel-inner .carousel-item .imgCarrousel {
     width: 100%;
-    height: 200px;
+    height: 220px;
   }
 }
 
 @media only screen and (max-width: 475px) {
   .contenedorMain .carousel .carousel-inner .carousel-item .imgCarrousel {
     width: 100%;
-    height: 180px;
+    height: 200px;
   }
 }
 
@@ -960,10 +961,10 @@ td {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: #b2b2b2;
     padding: 0;
   }
@@ -1250,7 +1251,7 @@ td {
   color: white;
   padding: 0;
   margin: 0;
-  padding: 0px 0 40px 0;
+  padding: 20px 0 40px 0;
   -webkit-text-stroke: 0.5px;
   -webkit-backdrop-filter: blur(0.5px);
           backdrop-filter: blur(0.5px);
@@ -1469,6 +1470,11 @@ canvas {
   footer .footerDerecha .encontranos {
     font-size: 18px;
   }
+  footer .iconosFooter {
+    width: 60px;
+    height: 50px;
+    border-radius: 5px;
+  }
   footer .footerIzquierda .mediosdePago {
     font-size: 18px;
     color: #fff;
@@ -1490,7 +1496,7 @@ canvas {
 @media only screen and (max-width: 425px) {
   footer .iconosFooter {
     width: 40px;
-    height: 25px;
+    height: 30px;
     border-radius: 5px;
   }
   .logoFooter {
