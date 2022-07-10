@@ -13,7 +13,8 @@
 }
 
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 12px;
+  border: 1px solid black;
 }
 
 ::-webkit-scrollbar-track {
@@ -21,17 +22,17 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #ffffff;
-  border-radius: 2px;
+  background-color: #5f5f5f;
+  border-radius: 4px;
 }
 
 ::-moz-selection {
-  background-color: #B89B86;
+  background-color: #a5a5a5;
   color: #ffffff;
 }
 
 ::selection {
-  background-color: #B89B86;
+  background-color: #a5a5a5;
   color: #ffffff;
 }
 
@@ -47,13 +48,24 @@ body {
 }
 
 h3 {
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
   font-family: 'poppins';
   text-align: center;
   font-size: 30px;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: bold;
-  -webkit-text-stroke: 1px;
+  -webkit-text-stroke: 2px;
+  -webkit-backdrop-filter: blur(0.5px);
+          backdrop-filter: blur(0.5px);
+}
+
+@media only screen and (max-width: 500px) {
+  h3 {
+    font-size: 20px;
+    -webkit-text-stroke: 0.2px;
+  }
 }
 
 /* === === === === === === === === === === HEADER === === === === === === === === === === */
@@ -81,7 +93,7 @@ header .header {
 }
 
 header .header .logo img {
-  height: 160px;
+  height: 140px;
   margin-left: 2rem;
 }
 
@@ -99,7 +111,7 @@ header .header .menu {
   -webkit-column-gap: 45px;
           column-gap: 45px;
   margin: 0;
-  height: 120px;
+  height: 100px;
 }
 
 header .header .menu a {
@@ -117,7 +129,7 @@ header .header .menu a {
 
 .navbar-light .navbar-nav .nav-link {
   color: white;
-  font-size: 17px;
+  font-size: 16px;
   padding: 0 1.5rem;
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
@@ -133,7 +145,7 @@ header .header .menu a {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
-  background-color: #ffffff;
+  background-color: #000000;
   border: 1px solid transparent;
   border-radius: 0.25rem;
   -webkit-transition: -webkit-box-shadow .15s ease-in-out;
@@ -143,7 +155,8 @@ header .header .menu a {
 }
 
 .navbar-light .navbar-toggler-icon {
-  background-image: url("../imagenes/bars-solid.svg");
+  background-image: url("");
+  color: white;
 }
 
 .navbar-collapse {
@@ -212,7 +225,7 @@ header .header .menu a {
 .botonWhapp {
   position: fixed;
   right: 2rem;
-  bottom: 3rem;
+  bottom: 6rem;
   z-index: 200;
   background-color: #080808;
   border-radius: 50%;
@@ -299,13 +312,35 @@ header .header .menu a {
   height: auto;
   width: 100%;
   background-color: white;
-  height: 450px;
+  height: 500px;
 }
 
 /* === === MEDIA QUERIES INICIO === === */
-@media only screen and (max-width: 425px) {
-  .imagenInicio {
-    width: 400px;
+@media only screen and (max-width: 1000px) {
+  .contenedorMain .carousel .carousel-inner .carousel-item .imgCarrousel {
+    width: 100%;
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .contenedorMain .carousel .carousel-inner .carousel-item .imgCarrousel {
+    width: 100%;
+    height: 280px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contenedorMain .carousel .carousel-inner .carousel-item .imgCarrousel {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .contenedorMain .carousel .carousel-inner .carousel-item .imgCarrousel {
+    width: 100%;
+    height: 180px;
   }
 }
 
@@ -314,21 +349,6 @@ header .header .menu a {
   background-color: #ffffff;
   background-image: url("../imagenes/endless-constellation (3).svg");
   padding-top: 50px;
-}
-
-.tituloProductos {
-  background-color: rgba(255, 255, 255, 0);
-  color: black;
-  margin-bottom: 0;
-  font-family: 'poppins';
-  text-align: center;
-  font-size: 30px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: bold;
-  -webkit-text-stroke: 2px;
-  -webkit-backdrop-filter: blur(0.5px);
-          backdrop-filter: blur(0.5px);
 }
 
 .cardContainer {
@@ -844,12 +864,22 @@ td {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .tituloProductos {
+    font-size: 20px;
+    -webkit-text-stroke: 0.2px;
+  }
+}
+
 .tituloNosotros {
   background-color: black;
   color: white;
   padding: 0;
   margin: 0;
-  padding-top: 45px;
+  padding: 30px 0 30px 0;
+  -webkit-text-stroke: 0.5px;
+  -webkit-backdrop-filter: blur(0.5px);
+          backdrop-filter: blur(0.5px);
 }
 
 .nosotros {
@@ -860,7 +890,6 @@ td {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: black;
-  padding-top: 45px;
 }
 
 .nosotros .containerNosotros {
@@ -885,6 +914,7 @@ td {
   background-size: cover;
   background-repeat: no-repeat;
   width: 40%;
+  height: auto;
 }
 
 .nosotros .containerNosotros .textoNosotros {
@@ -920,22 +950,47 @@ td {
 }
 
 /* === === MEDIA QUERIES NOSOTROS === === */
-@media only screen and (max-width: 768px) {
-  .containerNosotros {
+@media only screen and (max-width: 770px) {
+  .nosotros {
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
+  .nosotros .containerNosotros {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: #b2b2b2;
+    padding: 0;
   }
-  .imagenNosotros {
-    width: 100%;
+  .nosotros .containerNosotros .imagenNosotros {
+    background-image: url(../imagenes/nosotros.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
   }
-  .textoNosotros {
-    width: 100%;
+  .nosotros .containerNosotros .textoNosotros {
+    width: 50%;
+    font-size: 15px;
+    background-color: #606060;
+    padding: 0px;
   }
+}
+
+.tituloContacto {
+  background-color: black;
+  color: white;
+  padding: 0;
+  margin: 0;
+  padding: 0px 0 30px 0;
+  -webkit-text-stroke: 0.5px;
+  -webkit-backdrop-filter: blur(0.5px);
+          backdrop-filter: blur(0.5px);
 }
 
 .contacto {
@@ -953,14 +1008,7 @@ td {
       -ms-flex-align: center;
           align-items: center;
   background-color: black;
-  padding: 80px 0;
-}
-
-.contacto .tituloContacto {
-  color: white;
-  padding: 0;
-  margin: 0;
-  padding: 0 0 30px 0;
+  padding: 40px 0;
 }
 
 .contacto .contenedorForm {
@@ -1016,7 +1064,7 @@ td {
   font-size: 18px;
   background-color: transparent;
   border: none;
-  border-bottom: 2.5px solid #ffffff;
+  border-bottom: 1.5px solid #ffffff;
   outline: none;
   width: 90%;
   padding: 25px 25px;
@@ -1055,7 +1103,7 @@ td {
 
 .contacto .contenedorForm form .boton .inputBoton {
   padding: 10px 50px;
-  border: 2px solid #ffffff;
+  border: 1px solid #ffffff;
   border-radius: 5px;
   font-size: 16px;
   font-family: poppins;
@@ -1191,12 +1239,21 @@ td {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .icon {
+    font-size: 3em !important;
+  }
+}
+
 .tituloFaq {
   background-color: black;
   color: white;
   padding: 0;
   margin: 0;
-  padding: 0px 0 60px 0;
+  padding: 0px 0 40px 0;
+  -webkit-text-stroke: 0.5px;
+  -webkit-backdrop-filter: blur(0.5px);
+          backdrop-filter: blur(0.5px);
 }
 
 .faq {

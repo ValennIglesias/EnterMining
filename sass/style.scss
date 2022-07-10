@@ -17,21 +17,21 @@ $carousel-control-transition: opacity .1s ease;
 }
 
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 12px;
+    border: 1px solid black;
 }
 
 ::-webkit-scrollbar-track {
     background-color: #000000;
-
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #ffffff;
-    border-radius: 2px;
+    background-color: #5f5f5f;
+    border-radius: 4px;
 }
 
 ::selection {
-    background-color: #B89B86;
+    background-color: #a5a5a5;
     color: #ffffff;
 }
 
@@ -47,13 +47,26 @@ body {
 }
 
 h3 {
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
     font-family: 'poppins';
     text-align: center;
     font-size: 30px;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: bold;
-    -webkit-text-stroke: 1px;
+    -webkit-text-stroke: 2px;
+    backdrop-filter: blur(0.5px);
+}
+
+@media only screen and (max-width: 500px){
+
+    h3{
+        font-size: 20px;
+    -webkit-text-stroke: 0.2px;
+
+    }
+
 }
 
 /* === === === === === === === === === === HEADER === === === === === === === === === === */
@@ -72,7 +85,7 @@ header {
         background-color: #000000;
 
         .logo img {
-            height: 160px;
+            height: 140px;
             margin-left: 2rem;
         }
 
@@ -82,7 +95,7 @@ header {
             justify-content: space-between;
             column-gap: 45px;
             margin: 0;
-            height: 120px;
+            height: 100px;
 
             a {
                 text-decoration: none;
@@ -103,7 +116,7 @@ header {
 
 .navbar-light .navbar-nav .nav-link {
     color: white;
-    font-size: 17px;
+    font-size: 16px;
     padding: 0 1.5rem;
     transition: all ease-in-out 0.4s;
 
@@ -117,14 +130,15 @@ header {
     padding: 0.25rem 0.75rem;
     font-size: 1.25rem;
     line-height: 1;
-    background-color: #ffffff;
+    background-color: #000000;
     border: 1px solid transparent;
     border-radius: 0.25rem;
     transition: box-shadow .15s ease-in-out;
 }
 
 .navbar-light .navbar-toggler-icon {
-    background-image: url("../imagenes/bars-solid.svg");
+    background-image: url("");
+    color:rgb(255, 255, 255);
 }
 
 .navbar-collapse {
@@ -207,7 +221,7 @@ header {
 .botonWhapp {
     position: fixed;
     right: 2rem;
-    bottom: 3rem;
+    bottom: 6rem;
     z-index: 200;
     background-color: rgb(8, 8, 8);
     border-radius: 50%;
@@ -260,7 +274,7 @@ header {
                     height: auto;
                     width: 100%;
                     background-color: white;
-                    height: 450px;
+                    height: 500px;
 
                 }
             }
@@ -269,10 +283,70 @@ header {
 }
 /* === === MEDIA QUERIES INICIO === === */
 
-@media only screen and (max-width: 425px) {
 
-    .imagenInicio {
-        width: 400px;
+@media only screen and (max-width: 1000px) {
+
+    .contenedorMain {
+        .carousel {
+            .carousel-inner {
+                .carousel-item {
+                    .imgCarrousel {
+                        width: 100%;
+                        height: 350px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .contenedorMain {
+        .carousel {
+            .carousel-inner {
+                .carousel-item {
+                    .imgCarrousel {
+                        width: 100%;
+                        height: 280px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .contenedorMain {
+        .carousel {
+            .carousel-inner {
+                .carousel-item {
+                    .imgCarrousel {
+                        width: 100%;
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 475px) {
+
+    .contenedorMain {
+        .carousel {
+            .carousel-inner {
+                .carousel-item {
+                    .imgCarrousel {
+                        width: 100%;
+                        height: 180px;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -285,19 +359,6 @@ header {
     padding-top: 50px;
 }
 
-.tituloProductos {
-    background-color: rgba(255, 255, 255, 0);
-    color: black;
-    margin-bottom: 0;
-    font-family: 'poppins';
-    text-align: center;
-    font-size: 30px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: bold;
-    -webkit-text-stroke: 2px;
-    backdrop-filter: blur(0.5px);
-}
 
 .cardContainer {
     display: flex;
@@ -751,6 +812,15 @@ td {
     }
 }
 
+@media only screen and (max-width: 500px){
+
+   .tituloProductos{
+        font-size: 20px;
+    -webkit-text-stroke: 0.2px;
+
+    }
+
+}
 // <!-- === === === === === NOSOTROS === === === === === --> //
 
 .tituloNosotros {
@@ -758,14 +828,16 @@ td {
     color: white;
     padding: 0;
     margin: 0;
-    padding-top: 45px;
+    padding: 30px 0 30px 0;
+    -webkit-text-stroke: 0.5px;
+    backdrop-filter: blur(0.5px);
+    
 }
-
 .nosotros {
     display: flex;
     justify-content: center;
     background-color: black;
-    padding-top: 45px;
+   
     .containerNosotros {
         width: 100%;
         display: flex;
@@ -779,6 +851,7 @@ td {
             background-size: cover;
             background-repeat: no-repeat;
             width: 40%;
+            height: auto;
         }
 
         .textoNosotros {
@@ -808,23 +881,46 @@ td {
 }
 /* === === MEDIA QUERIES NOSOTROS === === */
 
-@media only screen and (max-width: 768px) {
-
+@media only screen and (max-width: 770px) {
+.nosotros{
+    height: min-content;
+  
     .containerNosotros {
         display: flex;
-        flex-direction: column;
-    }
+        flex-direction: row;
+        background-color: rgb(178, 178, 178);
+        padding: 0;
 
-    .imagenNosotros {
-        width: 100%;
-    }
+        .imagenNosotros {
+            background-image: url(../imagenes/nosotros.jpg);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 50%;
+        }
 
-    .textoNosotros {
-        width: 100%;
+        .textoNosotros {
+            width: 50%;
+            font-size: 15px;
+            background-color: rgb(96, 96, 96);
+            padding: 0px;
+
+        }
     }
+}
 }
 
 // <!-- === === === === === CONTACTO === === === === === --> //
+
+.tituloContacto {
+    background-color: black;
+    color: white;
+    padding: 0;
+    margin: 0;
+    padding: 0px 0 30px 0;
+    -webkit-text-stroke: 0.5px;
+    backdrop-filter: blur(0.5px);
+}
 
 .contacto {
     display: flex;
@@ -832,14 +928,7 @@ td {
     justify-content: center;
     align-items: center;
     background-color: black;
-    padding: 80px 0;
-
-    .tituloContacto {
-        color: white;
-        padding: 0;
-        margin: 0;
-        padding: 0 0 30px 0;
-    }
+    padding: 40px 0;
 
     .contenedorForm {
         width: 100%;
@@ -869,7 +958,7 @@ td {
                 font-size: 18px;
                 background-color: transparent;
                 border: none;
-                border-bottom: 2.5px solid #ffffff;
+                border-bottom: 1.5px solid #ffffff;
                 outline: none;
                 width: 90%;
                 padding: 25px 25px;
@@ -891,7 +980,7 @@ td {
 
                 .inputBoton {
                     padding: 10px 50px;
-                    border: 2px solid #ffffff;
+                    border: 1px solid #ffffff;
                     border-radius: 5px;
                     font-size: 16px;
                     font-family: poppins;
@@ -1010,6 +1099,14 @@ td {
     }
 }
 
+@media only screen and (max-width: 500px){
+
+    .icon {
+        font-size: 3em !important;
+    }
+
+}
+
 // <!-- === === === === === FAQ === === === === === --> //
 
 .tituloFaq {
@@ -1017,7 +1114,10 @@ td {
     color: white;
     padding: 0;
     margin: 0;
-    padding: 0px 0 60px 0;
+    padding: 0px 0 40px 0;
+    -webkit-text-stroke: 0.5px;
+    backdrop-filter: blur(0.5px);
+    
 }
 
 .faq {
