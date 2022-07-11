@@ -337,10 +337,7 @@ header {
     }
 }
 
-
-
 @media only screen and (max-width: 475px) {
-
     .contenedorMain {
         .carousel {
             .carousel-inner {
@@ -856,7 +853,7 @@ td {
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            width: 40%;
+            width: 50%;
             height: auto;
         }
 
@@ -866,7 +863,7 @@ td {
             text-align: justify;
             line-height: 30px;
             font-size: 18px;
-            width: 60%;
+            width: 50%;
 
             &::selection {
                 background-color: #1b1b1b;
@@ -889,26 +886,24 @@ td {
 
 @media only screen and (max-width: 770px) {
 .nosotros{
-    height: min-content;
   
     .containerNosotros {
         display: flex;
         flex-direction: column;
-        background-color: rgb(178, 178, 178);
-        padding: 0;
+        padding: 20px;
 
         .imagenNosotros {
             background-image: url(../imagenes/nosotros.jpg);
             background-position: center;
-            background-size: contain;
+            background-size: cover;
             background-repeat: no-repeat;
-            width: 50%;
+            width: 100%;
+            height: 400px;
         }
 
         .textoNosotros {
-            width: 50%;
+            width: 100%;
             font-size: 15px;
-            background-color: rgb(96, 96, 96);
             padding: 0px;
 
         }
