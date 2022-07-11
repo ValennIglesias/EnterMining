@@ -125,6 +125,10 @@ header {
         transform: scale(1.1);
         color: white;
     }
+
+    &:focus{
+        color: #fff;
+    }
 }
 
 .navbar-toggler {
