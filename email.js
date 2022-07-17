@@ -16,7 +16,6 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
                 }
             }).showToast()
             btn.value = 'SUBMIT';
-            // alert('Mail status: success');
         }, function (error) {
             console.log('Mail status: failed', error);
         });
