@@ -890,7 +890,7 @@ td {
     .containerNosotros {
         display: flex;
         flex-direction: column;
-        padding: 20px;
+        padding: 0 40px;
 
         .imagenNosotros {
             background-image: url(../imagenes/nosotros.jpg);
@@ -1298,8 +1298,8 @@ canvas {
     }
 
     footer .iconosFooter {
-        width: 60px;
-        height: 50px;
+        width: 46px;
+        height: 36px;
         border-radius: 5px;
     }
 
@@ -1321,17 +1321,38 @@ canvas {
     }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 600px) {
+
+    footer .footerDerecha .encontranos {
+        font-size: 16px;
+    }
 
     footer .iconosFooter {
         width: 40px;
         height: 30px;
-        border-radius: 5px;
+        padding: 2px;
+
     }
 
     .logoFooter {
 
         height: 100px;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    footer .iconosFooter {
+        width: 30px;
+        height: 20px;
+        padding: 0px;
+
+    }
+
+    .logoFooter {
+
+        height: 90px;
         width: auto;
     }
 }
