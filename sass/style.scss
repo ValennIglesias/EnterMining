@@ -269,6 +269,7 @@ header {
     margin: 0;
 
     .carousel {
+        width: 100%;
         .carousel-inner {
             transition: $carousel-control-transition;
 
@@ -476,7 +477,7 @@ header {
 }
 
 .cardImagen7 {
-    background-image: url("../imagenes/DSC01638.jpg");
+    background-image: url("../imagenes/DSC01639.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -715,12 +716,32 @@ td {
             color: #ffffff;
 
             &:hover {
-                color: #fff;
-                transition: 300ms;
+                color:rgba(223, 223, 223, 0.726);
+                transition: 400ms;
             }
         }
     }
 }
+
+.botonModal {
+    padding: 6px 15px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: poppins;
+    background-color: transparent;
+    letter-spacing: 3px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all ease 0.8s;
+
+    &:hover {
+        background-color: #ffffff;
+        color: #000;
+        font-weight: bold;
+    }
+}
+
 
 .masProductos {
     display: none;
