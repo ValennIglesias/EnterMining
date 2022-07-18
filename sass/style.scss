@@ -362,7 +362,6 @@ header {
     padding-top: 50px;
 }
 
-
 .cardContainer {
     display: flex;
     flex-wrap: wrap;
@@ -386,154 +385,59 @@ header {
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.cardImagen {
-    background-image: url("../imagenes/DSC01611.jpg");
+.card{
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     height: 250px;
     transition: all ease 0.8s;
     border-radius: 10px;
+    border: none;
 
     &:hover {
-        transform: scale(1.15);
+        background-size: 120%;
         border: none;
     }
+}
+
+.cardImagen {
+    background-image: url("../imagenes/DSC01611.jpg");
 }
 
 .cardImagen2 {
     background-image: url("../imagenes/DSC01611.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 250px;
-    transition: all ease 0.8s;
-    border-radius: 10px;
-
-    &:hover {
-        transform: scale(1.15);
-        border: none;
-    }
 }
 
 .cardImagen3 {
-    background-image: url("../imagenes/DSC01611.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 250px;
-    transition: all ease 0.8s;
-    border-radius: 10px;
-
-    &:hover {
-        transform: scale(1.15);
-        border: none;
-    }
+    background-image: url("../imagenes/DSC01611.jpg"); 
 }
 
 .cardImagen4 {
-    background-image: url("../imagenes/DSC01657.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 250px;
-    transition: all ease 0.8s;
-    border-radius: 10px;
-
-    &:hover {
-        transform: scale(1.15);
-        border: none;
-    }
+    background-image: url("../imagenes/DSC01657.jpg"); 
 }
 
 .cardImagen5 {
-    background-image: url("../imagenes/DSC01629.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 250px;
-    transition: all ease 0.8s;
-    border-radius: 10px;
-
-    &:hover {
-        transform: scale(1.15);
-        border: none;
-    }
+    background-image: url("../imagenes/DSC01629.jpg");   
 }
 
 .cardImagen6 {
-    background-image: url("../imagenes/DSC01629.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 250px;
-    transition: all ease 0.8s;
-    border-radius: 10px;
-
-    &:hover {
-        transform: scale(1.15);
-        border: none;
-    }
+    background-image: url("../imagenes/DSC01629.jpg"); 
 }
 
 .cardImagen7 {
-    background-image: url("../imagenes/DSC01639.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 250px;
-    transition: all ease 0.8s;
-    border-radius: 10px;
-
-    &:hover {
-        transform: scale(1.15);
-        border: none;
-    }
+    background-image: url("../imagenes/DSC01639.jpg"); 
 }
 
 .cardImagen8 {
-    background-image: url("../imagenes/DSC01660.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 250px;
-    transition: all ease 0.8s;
-    border-radius: 10px;
-
-    &:hover {
-        transform: scale(1.15);
-        border: none;
-    }
+    background-image: url("../imagenes/DSC01660.jpg");    
 }
 
 .cardImagen9 {
-    background-image: url("../imagenes/DSC01657.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 250px;
-    transition: all ease 0.8s;
-    border-radius: 10px;
-
-    &:hover {
-        transform: scale(1.15);
-        border: none;
-    }
+    background-image: url("../imagenes/DSC01657.jpg");    
 }
 
 .cardImagen10 {
-    background-image: url("../imagenes/DSC01660.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 250px;
-    transition: all ease 0.8s;
-    border-radius: 10px;
-
-    &:hover {
-        transform: scale(1.15);
-        border: none;
-    }
+    background-image: url("../imagenes/DSC01660.jpg");   
 }
 
 .cardFooter {
@@ -654,7 +558,7 @@ header {
     bottom: -1px;
     left: -8px;
     width: 0;
-    background-color: #740707;
+    background-color: #b6aa02;
     transform: skew(-15deg);
     transition: all .2s ease;
 }
@@ -926,7 +830,6 @@ td {
             width: 100%;
             font-size: 15px;
             padding: 0px;
-
         }
     }
 }
@@ -1038,7 +941,6 @@ td {
     margin-top: 20px;
     border-radius: 20px;
     width: 100% !important;
-    // padding: 50px 0;
 
     p {
         font-size: 50px;
@@ -1046,7 +948,6 @@ td {
         color: #ffffff;
         letter-spacing: 4px;
         padding: 10px;
-
     }
 }
 
@@ -1057,7 +958,7 @@ td {
 
     &:hover {
         transform: translateY(-10px);
-        text-shadow: 2px 2px 5px rgb(153, 149, 149);
+        text-shadow: 2px 2px 5px rgb(65, 65, 65);
     }
 }
 
