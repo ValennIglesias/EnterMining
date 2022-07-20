@@ -1,7 +1,8 @@
 var particles = Particles.init({
 	selector: '.background',
   color: '#ffffff',
-  connectParticles:true
+  connectParticles:true,
+  maxParticles:85
 });
 
 
