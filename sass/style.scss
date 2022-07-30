@@ -558,7 +558,7 @@ header {
     bottom: -1px;
     left: -8px;
     width: 0;
-    background-color: #b6aa02;
+    background-color: #90C403;
     transform: skew(-15deg);
     transition: all .2s ease;
 }
@@ -1169,7 +1169,7 @@ footer {
         }
 
         .direccion {
-            text-decoration: none;
+            text-decoration: underline;
             color: #ffffff;
 
             &:hover {
